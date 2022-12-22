@@ -1,0 +1,38 @@
+2019-09-12 00:02:35.771 -04:00 [INF] User profile is available. Using 'C:\Users\Viraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-09-12 00:02:36.469 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-09-12 00:02:36.667 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ValuesController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-09-12 00:02:36.672 -04:00 [INF] This is test message
+2019-09-12 00:02:36.677 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-09-12 00:02:36.745 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ValuesController.Get (InvoiceManagerWeb) in 86.4345ms
+2019-09-12 00:02:36.748 -04:00 [INF] Request finished in 284.3697ms 200 application/json; charset=utf-8
+2019-09-12 00:02:41.406 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/customer-units/2 application/json 13
+2019-09-12 00:02:41.407 -04:00 [INF] Policy execution successful.
+2019-09-12 00:02:41.435 -04:00 [INF] UnitOfWork Object created
+2019-09-12 00:02:41.476 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.YearlyCustomerUnits (InvoiceManagerWeb) with arguments (["2","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-09-12 00:02:44.604 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-09-12 00:02:44.605 -04:00 [INF] Start End days: "2018-08-05T00:00:00.0000000" "2019-08-03T00:00:00.0000000" 
+2019-09-12 00:03:03.521 -04:00 [INF] User profile is available. Using 'C:\Users\Viraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-09-12 00:03:04.421 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-09-12 00:03:04.607 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ValuesController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-09-12 00:03:04.611 -04:00 [INF] This is test message
+2019-09-12 00:03:04.615 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-09-12 00:03:04.677 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ValuesController.Get (InvoiceManagerWeb) in 78.6806ms
+2019-09-12 00:03:04.680 -04:00 [INF] Request finished in 263.8053ms 200 application/json; charset=utf-8
+2019-09-12 00:03:08.886 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/customer-units/2 application/json 13
+2019-09-12 00:03:08.887 -04:00 [INF] Policy execution successful.
+2019-09-12 00:03:08.911 -04:00 [INF] UnitOfWork Object created
+2019-09-12 00:03:08.957 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.YearlyCustomerUnits (InvoiceManagerWeb) with arguments (["2","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-09-12 00:03:11.591 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-09-12 00:03:11.592 -04:00 [INF] Start End days: "2018-08-05T00:00:00.0000000" "2019-08-03T00:00:00.0000000" 
+2019-09-12 00:03:11.617 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-09-12 00:03:11.633 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.YearlyCustomerUnits (InvoiceManagerWeb) in 2723.4113ms
+2019-09-12 00:03:11.634 -04:00 [INF] Request finished in 2748.2394ms 200 application/json; charset=utf-8
+2019-09-12 00:04:38.397 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/customer-units/2 application/json 13
+2019-09-12 00:04:38.397 -04:00 [INF] Policy execution successful.
+2019-09-12 00:04:38.398 -04:00 [INF] UnitOfWork Object created
+2019-09-12 00:04:38.418 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.YearlyCustomerUnits (InvoiceManagerWeb) with arguments (["2","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-09-12 00:04:42.553 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-09-12 00:04:42.553 -04:00 [INF] Start End days: "2018-08-05T00:00:00.0000000" "2019-08-03T00:00:00.0000000" 
+2019-09-12 00:04:42.555 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-09-12 00:04:42.556 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.YearlyCustomerUnits (InvoiceManagerWeb) in 4157.9216000000006ms
+2019-09-12 00:04:42.556 -04:00 [INF] Request finished in 4158.8718ms 200 application/json; charset=utf-8

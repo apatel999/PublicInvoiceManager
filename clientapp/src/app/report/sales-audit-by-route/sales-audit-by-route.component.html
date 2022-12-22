@@ -1,0 +1,162 @@
+<div class="content-wrapper" style="height:1000px">
+    <section class="content-header">
+        <div class="col-xs-12">
+          <h2>
+            Sales Audit Report By Route
+            <span style="font-size: 80%"  *ngIf="(report$ | async) as report">
+                (<span>Week: {{report.Week}}</span>
+                <span style="margin-left:20px">Date: {{report.ReportDate | date:'yyyy-MMM-dd EEEE'}}</span> )
+            </span>
+          </h2>
+        </div>
+    </section>
+
+    <section class="content">
+        <div>
+          <form #scheduleForm="ngForm">
+            <table>
+              <tr>
+                <td style="padding-right:5px;">
+                  <select class="form-control" [compareWith]="compareWithYearId" name="scheduleYear" [(ngModel)]="scheduleYear" (change)="yearChanged()">
+                    <option *ngFor="let year of (yearList$ | async)" [ngValue]="year">
+                          {{year.FirstSundayOfTheYear | date:'yyyy-MMM-dd EEEE'}}
+                    </option>
+                </select>
+                </td>
+                <td><input type="text" class="form-control"  name="scheduleWeek" [(ngModel)]="scheduleWeek"></td>
+                <td><input type="text" class="form-control" placeholder="Route" name="route" [(ngModel)]="route" required></td>
+                <td><button type="button" class="btn btn-primary" (click)="loadReport()" style="margin-left:5px"> 
+                  Load
+                </button></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div *ngIf="(report$ | async) as report">
+          <table width="100%" class="table table-bordered table-responsive table-hover table-white report-table">
+              <thead>
+                <tr>
+                    <th rowspan="2">Store No</th>
+                    <th rowspan="2">Name</th>
+                    <th rowspan="2">Address</th>
+                    <th rowspan="2">Invoice Number</th>
+                    <th colspan="3">CASH</th>
+                    <th colspan="3">CHARGE</th>
+                </tr>
+                <tr>
+                    <!-- <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>   -->
+                    <th>Net</th>  
+                    <th>HST</th>  
+                    <th>Total</th>   
+                    <th>Net</th>  
+                    <th>HST</th>  
+                    <th>Total</th>       
+                </tr>
+            </thead>
+            <tr *ngFor="let order of report.Orders">
+              <td>{{ order.StoreInfo.StoreNumber}}</td>
+              <td>{{ order.StoreInfo.BillingInformation.Name}}</td>
+              <td>{{ order.StoreInfo.BillingInformation.Address1}}</td>
+              <td>{{ order.InvoiceNumber}}</td>
+              <td>
+                <span *ngIf= "order.StoreInfo.BillingInformation.PaymentType == 'CASH' ">
+                  {{ order.SubTotal}}
+                </span>
+              </td>
+              <td>
+                  <span *ngIf= "order.StoreInfo.BillingInformation.PaymentType == 'CASH' ">
+                    {{ order.TaxAmount}}
+                  </span>  
+              </td>
+              <td>
+                  <span *ngIf= "order.StoreInfo.BillingInformation.PaymentType == 'CASH' ">
+                    {{ order.Total}}
+                  </span>  
+              </td>
+              <td>
+                  <span *ngIf= "order.StoreInfo.BillingInformation.PaymentType == 'CHARG' ">
+                    {{ order.SubTotal}}
+                  </span>
+                </td>
+                <td>
+                    <span *ngIf= "order.StoreInfo.BillingInformation.PaymentType == 'CHARG' ">
+                      {{ order.TaxAmount}}
+                    </span>  
+                </td>
+                <td>
+                    <span *ngIf= "order.StoreInfo.BillingInformation.PaymentType == 'CHARG' ">
+                      {{ order.Total}}
+                    </span>  
+                </td>
+              
+            </tr>
+            <tr  style="background-color: blanchedalmond">
+              <td colspan="4"  align="right"><strong>Route {{route}} Totals:</strong> </td>
+              <!-- <td></td>
+              <td></td>
+              <td></td> -->
+              <td>{{report.CashSale.SubTotal}}</td>  
+              <td>{{report.CashSale.Tax}}</td>  
+              <td>{{report.CashSale.Total}}</td>   
+              <td>{{report.ChargeSale.SubTotal}}</td>  
+              <td>{{report.ChargeSale.Tax}}</td>  
+              <td>{{report.ChargeSale.Total}}</td>   
+            </tr>
+            
+            <tr>
+              <td colspan="10">&nbsp;</td>
+              <!-- <td></td>
+              <td></td>
+              <td></td> 
+              <td></td>  
+              <td></td> 
+              <td></td>  
+              <td></td>   
+              <td></td>  
+              <td></td>-->   
+            </tr>
+            <tr>
+                <td colspan="4" align="right"><strong>Cash + Charge:</strong> </td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+                <td>{{report.AllSale.SubTotal}}</td>  
+                <td></td> 
+                <td></td>  
+                <td></td>   
+                <td></td>  
+                <td></td>   
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+                <td>{{report.AllSale.Tax}}</td>  
+                <td></td> 
+                <td></td>  
+                <td></td>   
+                <td></td>  
+                <td></td>   
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+                <td>{{report.AllSale.Total}}</td>  
+                <td></td> 
+                <td></td>  
+                <td></td>   
+                <td></td>  
+                <td></td>   
+              </tr>
+          </table>
+        </div>
+    </section>   
+
+
+</div>    

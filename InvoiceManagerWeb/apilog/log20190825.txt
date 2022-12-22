@@ -1,0 +1,1094 @@
+2019-08-25 12:29:23.612 -04:00 [INF] User profile is available. Using 'C:\Users\Viraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-25 12:29:27.848 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-08-25 12:29:28.470 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ValuesController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:29:28.475 -04:00 [INF] This is test message
+2019-08-25 12:29:28.481 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:28.736 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ValuesController.Get (InvoiceManagerWeb) in 288.37190000000004ms
+2019-08-25 12:29:28.744 -04:00 [INF] Request finished in 902.867ms 200 application/json; charset=utf-8
+2019-08-25 12:29:29.169 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-08-25 12:29:29.171 -04:00 [INF] Request finished in 1.4328ms 404 
+2019-08-25 12:29:32.306 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 12:29:32.309 -04:00 [INF] Policy execution successful.
+2019-08-25 12:29:32.313 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:29:32.321 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:29:32.327 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 12:29:32.328 -04:00 [INF] Policy execution successful.
+2019-08-25 12:29:33.766 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:29:33.962 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 12:29:35.163 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:35.189 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 2877.0060000000003ms
+2019-08-25 12:29:35.189 -04:00 [INF] Request finished in 2882.7477ms 200 application/json; charset=utf-8
+2019-08-25 12:29:35.242 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:35.290 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 1524.1907ms
+2019-08-25 12:29:35.290 -04:00 [INF] Request finished in 2963.0643ms 200 application/json; charset=utf-8
+2019-08-25 12:29:38.366 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/1  
+2019-08-25 12:29:38.366 -04:00 [INF] Policy execution successful.
+2019-08-25 12:29:38.369 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:29:38.381 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["1"]) - ModelState is "Valid"
+2019-08-25 12:29:38.575 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:38.576 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 206.48850000000002ms
+2019-08-25 12:29:38.576 -04:00 [INF] Request finished in 209.5832ms 200 application/json; charset=utf-8
+2019-08-25 12:29:40.763 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:29:40.763 -04:00 [INF] Policy execution successful.
+2019-08-25 12:29:40.766 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:29:40.767 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:29:40.769 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:40.775 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 8.5356ms
+2019-08-25 12:29:40.775 -04:00 [INF] Request finished in 12.1993ms 200 application/json; charset=utf-8
+2019-08-25 12:29:42.981 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 12:29:42.981 -04:00 [INF] Policy execution successful.
+2019-08-25 12:29:42.984 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:29:42.984 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 12:29:43.002 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:43.005 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 21.695500000000003ms
+2019-08-25 12:29:43.006 -04:00 [INF] Request finished in 24.3535ms 200 application/json; charset=utf-8
+2019-08-25 12:29:44.071 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/1/weekly-billing-statement/2/12  
+2019-08-25 12:29:44.071 -04:00 [INF] Policy execution successful.
+2019-08-25 12:29:44.075 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:29:44.075 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) with arguments (["1","2","12"]) - ModelState is "Valid"
+2019-08-25 12:29:44.106 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:44.116 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) in 41.7766ms
+2019-08-25 12:29:44.117 -04:00 [INF] Request finished in 45.4429ms 200 application/json; charset=utf-8
+2019-08-25 12:29:44.119 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/1/weekly-billing-statement/2/12  
+2019-08-25 12:29:44.119 -04:00 [INF] Policy execution successful.
+2019-08-25 12:29:44.119 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:29:44.120 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) with arguments (["1","2","12"]) - ModelState is "Valid"
+2019-08-25 12:29:44.123 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:29:44.124 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) in 4.4138ms
+2019-08-25 12:29:44.124 -04:00 [INF] Request finished in 5.1513ms 200 application/json; charset=utf-8
+2019-08-25 12:34:00.743 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 12:34:00.743 -04:00 [INF] Policy execution successful.
+2019-08-25 12:34:00.743 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:34:00.745 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 12:34:00.750 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:34:00.751 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 7.4473ms
+2019-08-25 12:34:00.751 -04:00 [INF] Request finished in 8.118ms 200 application/json; charset=utf-8
+2019-08-25 12:35:23.164 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/1  
+2019-08-25 12:35:23.164 -04:00 [INF] Policy execution successful.
+2019-08-25 12:35:23.164 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:35:23.165 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["1"]) - ModelState is "Valid"
+2019-08-25 12:35:23.171 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:35:23.171 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 6.5468ms
+2019-08-25 12:35:23.171 -04:00 [INF] Request finished in 7.1001ms 200 application/json; charset=utf-8
+2019-08-25 12:36:43.034 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:36:43.034 -04:00 [INF] Policy execution successful.
+2019-08-25 12:36:43.034 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:36:43.034 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:36:43.036 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:36:43.036 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 2.1258ms
+2019-08-25 12:36:43.036 -04:00 [INF] Request finished in 2.5596ms 200 application/json; charset=utf-8
+2019-08-25 12:36:45.619 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 12:36:45.619 -04:00 [INF] Policy execution successful.
+2019-08-25 12:36:45.619 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:36:45.619 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 12:36:45.620 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:36:45.620 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.1024ms
+2019-08-25 12:36:45.621 -04:00 [INF] Request finished in 1.4622ms 200 application/json; charset=utf-8
+2019-08-25 12:36:46.595 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 12:36:46.595 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 12:36:46.621 -04:00 [INF] Policy execution successful.
+2019-08-25 12:36:46.621 -04:00 [INF] Policy execution successful.
+2019-08-25 12:36:46.622 -04:00 [INF] Request finished in 26.9933ms 204 
+2019-08-25 12:36:46.622 -04:00 [INF] Request finished in 27.041ms 204 
+2019-08-25 12:36:46.646 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 12:36:46.646 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 12:36:46.646 -04:00 [INF] Policy execution successful.
+2019-08-25 12:36:46.646 -04:00 [INF] Policy execution successful.
+2019-08-25 12:36:46.648 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:36:46.648 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:36:46.651 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 12:36:46.651 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 12:36:46.672 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:36:46.672 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:36:46.673 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.673 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.673 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.673 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.708 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:36:46.708 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:36:46.708 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.708 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.708 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.708 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:36:46.728 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:36:46.728 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:36:46.737 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 89.443300000000008ms
+2019-08-25 12:36:46.737 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 89.443300000000008ms
+2019-08-25 12:36:46.768 -04:00 [INF] Request finished in 121.8257ms 200 application/json; charset=utf-8
+2019-08-25 12:36:46.768 -04:00 [INF] Request finished in 121.8257ms 200 application/json; charset=utf-8
+2019-08-25 12:39:10.326 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 12:39:10.326 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:10.326 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:10.329 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 12:39:10.336 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:10.337 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 10.7704ms
+2019-08-25 12:39:10.337 -04:00 [INF] Request finished in 11.5863ms 200 application/json; charset=utf-8
+2019-08-25 12:39:15.698 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/3  
+2019-08-25 12:39:15.698 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:15.698 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:15.698 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["3"]) - ModelState is "Valid"
+2019-08-25 12:39:15.704 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:15.704 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 6.0386000000000006ms
+2019-08-25 12:39:15.704 -04:00 [INF] Request finished in 6.5347ms 200 application/json; charset=utf-8
+2019-08-25 12:39:17.018 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:39:17.019 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:17.019 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:17.019 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:39:17.021 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:17.021 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 2.2793ms
+2019-08-25 12:39:17.021 -04:00 [INF] Request finished in 2.7684ms 200 application/json; charset=utf-8
+2019-08-25 12:39:19.282 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 12:39:19.282 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:19.282 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:19.282 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 12:39:19.283 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:19.283 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.0248000000000002ms
+2019-08-25 12:39:19.283 -04:00 [INF] Request finished in 1.4497ms 200 application/json; charset=utf-8
+2019-08-25 12:39:22.036 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/3/weekly-billing-statement/2/12  
+2019-08-25 12:39:22.036 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:22.036 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:22.037 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) with arguments (["3","2","12"]) - ModelState is "Valid"
+2019-08-25 12:39:22.039 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:22.040 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) in 3.4366000000000003ms
+2019-08-25 12:39:22.040 -04:00 [INF] Request finished in 3.9286ms 200 application/json; charset=utf-8
+2019-08-25 12:39:22.043 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/3/weekly-billing-statement/2/12  
+2019-08-25 12:39:22.044 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:22.044 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:22.044 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) with arguments (["3","2","12"]) - ModelState is "Valid"
+2019-08-25 12:39:22.046 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:22.046 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.WeeklyBillingStatement (InvoiceManagerWeb) in 2.293ms
+2019-08-25 12:39:22.046 -04:00 [INF] Request finished in 2.7442ms 200 application/json; charset=utf-8
+2019-08-25 12:39:26.509 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/3  
+2019-08-25 12:39:26.509 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:26.509 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:26.509 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["3"]) - ModelState is "Valid"
+2019-08-25 12:39:26.513 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:26.514 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 4.8404ms
+2019-08-25 12:39:26.514 -04:00 [INF] Request finished in 5.2454ms 200 application/json; charset=utf-8
+2019-08-25 12:39:39.152 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:39:39.152 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:39.152 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:39.152 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:39:39.153 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:39.153 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.478ms
+2019-08-25 12:39:39.154 -04:00 [INF] Request finished in 2.0602ms 200 application/json; charset=utf-8
+2019-08-25 12:39:44.013 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/3  
+2019-08-25 12:39:44.013 -04:00 [INF] Policy execution successful.
+2019-08-25 12:39:44.014 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:39:44.014 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["3"]) - ModelState is "Valid"
+2019-08-25 12:39:44.018 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:39:44.018 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 4.5094ms
+2019-08-25 12:39:44.018 -04:00 [INF] Request finished in 4.8719ms 200 application/json; charset=utf-8
+2019-08-25 12:48:37.808 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:48:37.808 -04:00 [INF] Policy execution successful.
+2019-08-25 12:48:37.809 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:48:37.809 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:48:37.829 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:48:37.830 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 20.9485ms
+2019-08-25 12:48:37.830 -04:00 [INF] Request finished in 21.3897ms 200 application/json; charset=utf-8
+2019-08-25 12:48:40.744 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 12:48:40.744 -04:00 [INF] Policy execution successful.
+2019-08-25 12:48:40.745 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:48:40.745 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 12:48:40.747 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:48:40.748 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 2.9001ms
+2019-08-25 12:48:40.748 -04:00 [INF] Request finished in 3.3574ms 200 application/json; charset=utf-8
+2019-08-25 12:48:41.455 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/production-schedule/2/12  
+2019-08-25 12:48:41.455 -04:00 [INF] Policy execution successful.
+2019-08-25 12:48:41.460 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:48:41.460 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 12:48:41.524 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:48:41.536 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) in 75.9073ms
+2019-08-25 12:48:41.536 -04:00 [INF] Request finished in 81.4026ms 200 application/json; charset=utf-8
+2019-08-25 12:48:41.539 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/production-schedule/2/12  
+2019-08-25 12:48:41.539 -04:00 [INF] Policy execution successful.
+2019-08-25 12:48:41.540 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:48:41.540 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 12:48:41.543 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:48:41.544 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) in 4.2129ms
+2019-08-25 12:48:41.544 -04:00 [INF] Request finished in 4.9988ms 200 application/json; charset=utf-8
+2019-08-25 12:49:50.242 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/deliveryroutes  
+2019-08-25 12:49:50.242 -04:00 [INF] Policy execution successful.
+2019-08-25 12:49:50.244 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:49:50.245 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.DeliveryRoutesController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:49:50.261 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:49:50.270 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.DeliveryRoutesController.Get (InvoiceManagerWeb) in 25.248900000000003ms
+2019-08-25 12:49:50.270 -04:00 [INF] Request finished in 27.998ms 200 application/json; charset=utf-8
+2019-08-25 12:50:03.319 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/store?Page=undefined  
+2019-08-25 12:50:03.320 -04:00 [INF] Policy execution successful.
+2019-08-25 12:50:03.322 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:50:03.324 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 12:50:03.368 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:50:03.384 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) in 61.645900000000005ms
+2019-08-25 12:50:03.384 -04:00 [INF] Request finished in 64.7963ms 200 application/json; charset=utf-8
+2019-08-25 12:50:21.783 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/deliveryroutes/1  
+2019-08-25 12:50:21.783 -04:00 [INF] Policy execution successful.
+2019-08-25 12:50:21.783 -04:00 [INF] Request finished in 0.4689ms 204 
+2019-08-25 12:50:21.786 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/deliveryroutes/1 application/json 222
+2019-08-25 12:50:21.787 -04:00 [INF] Policy execution successful.
+2019-08-25 12:50:21.789 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:50:21.900 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.DeliveryRoutesController.Put (InvoiceManagerWeb) with arguments (["1","InvoiceManagerWeb.ViewModel.DeliveryRouteViewModel"]) - ModelState is "Valid"
+2019-08-25 12:50:22.164 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:50:22.165 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.DeliveryRoutesController.Put (InvoiceManagerWeb) in 375.53700000000003ms
+2019-08-25 12:50:22.166 -04:00 [INF] Request finished in 379.5738ms 200 application/json; charset=utf-8
+2019-08-25 12:50:24.842 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 12:50:24.842 -04:00 [INF] Policy execution successful.
+2019-08-25 12:50:24.843 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:50:24.843 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:50:24.845 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:50:24.846 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 2.9862ms
+2019-08-25 12:50:24.846 -04:00 [INF] Request finished in 3.616ms 200 application/json; charset=utf-8
+2019-08-25 12:50:24.849 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 12:50:24.849 -04:00 [INF] Policy execution successful.
+2019-08-25 12:50:24.849 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:50:24.850 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 12:50:24.856 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:50:24.857 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 7.8637000000000006ms
+2019-08-25 12:50:24.858 -04:00 [INF] Request finished in 8.3698ms 200 application/json; charset=utf-8
+2019-08-25 12:50:26.540 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/store?Page=undefined  
+2019-08-25 12:50:26.540 -04:00 [INF] Policy execution successful.
+2019-08-25 12:50:26.540 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:50:26.541 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 12:50:26.543 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:50:26.544 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) in 3.8093000000000004ms
+2019-08-25 12:50:26.544 -04:00 [INF] Request finished in 4.2903ms 200 application/json; charset=utf-8
+2019-08-25 12:51:03.332 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/deliveryroutes/1  
+2019-08-25 12:51:03.332 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:03.333 -04:00 [INF] Request finished in 0.3343ms 204 
+2019-08-25 12:51:03.336 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/deliveryroutes/1 application/json 222
+2019-08-25 12:51:03.336 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:03.336 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:51:03.338 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.DeliveryRoutesController.Put (InvoiceManagerWeb) with arguments (["1","InvoiceManagerWeb.ViewModel.DeliveryRouteViewModel"]) - ModelState is "Valid"
+2019-08-25 12:51:03.381 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:51:03.382 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.DeliveryRoutesController.Put (InvoiceManagerWeb) in 45.4236ms
+2019-08-25 12:51:03.382 -04:00 [INF] Request finished in 46.3264ms 200 application/json; charset=utf-8
+2019-08-25 12:51:18.079 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:51:18.079 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:18.079 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:51:18.079 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:51:18.080 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:51:18.081 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.3468ms
+2019-08-25 12:51:18.081 -04:00 [INF] Request finished in 1.6653ms 200 application/json; charset=utf-8
+2019-08-25 12:51:21.458 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 12:51:21.458 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:21.458 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:51:21.458 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 12:51:21.459 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:51:21.459 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.0983ms
+2019-08-25 12:51:21.459 -04:00 [INF] Request finished in 1.4526ms 200 application/json; charset=utf-8
+2019-08-25 12:51:26.211 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 12:51:26.211 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:26.211 -04:00 [INF] Request finished in 0.2578ms 204 
+2019-08-25 12:51:26.213 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 12:51:26.213 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 12:51:26.214 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:26.215 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:26.216 -04:00 [INF] Request finished in 2.2528ms 204 
+2019-08-25 12:51:26.218 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 12:51:26.218 -04:00 [INF] Policy execution successful.
+2019-08-25 12:51:26.220 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:51:26.220 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:51:26.227 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:51:26.227 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:51:26.238 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:51:26.238 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.238 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.243 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:51:26.243 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.243 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.243 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:51:26.250 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:51:26.250 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.250 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.253 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:51:26.253 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.253 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:51:26.253 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:51:26.264 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 43.773500000000006ms
+2019-08-25 12:51:26.264 -04:00 [INF] Request finished in 50.7241ms 200 application/json; charset=utf-8
+2019-08-25 12:51:26.264 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 43.7734ms
+2019-08-25 12:51:26.266 -04:00 [INF] Request finished in 48.6354ms 200 application/json; charset=utf-8
+2019-08-25 12:52:11.189 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 12:52:11.189 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 12:52:11.189 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:11.189 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:11.189 -04:00 [INF] Request finished in 0.3684ms 204 
+2019-08-25 12:52:11.189 -04:00 [INF] Request finished in 0.2589ms 204 
+2019-08-25 12:52:11.214 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 12:52:11.214 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 12:52:11.214 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:11.214 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:11.214 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:52:11.214 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:52:11.214 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:52:11.214 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:52:11.215 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:11.215 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:11.215 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.215 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.215 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.215 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.218 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:11.218 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.218 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.218 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:52:11.218 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 4.6466ms
+2019-08-25 12:52:11.219 -04:00 [INF] Request finished in 5.1364ms 200 application/json; charset=utf-8
+2019-08-25 12:52:11.227 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:11.228 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.228 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:11.228 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:52:11.228 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 14.1948ms
+2019-08-25 12:52:11.228 -04:00 [INF] Request finished in 14.7466ms 200 application/json; charset=utf-8
+2019-08-25 12:52:19.445 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 12:52:19.446 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:19.446 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 12:52:19.446 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:19.446 -04:00 [INF] Request finished in 0.3952ms 204 
+2019-08-25 12:52:19.446 -04:00 [INF] Request finished in 0.4804ms 204 
+2019-08-25 12:52:19.475 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 12:52:19.476 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:19.476 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 12:52:19.476 -04:00 [INF] Policy execution successful.
+2019-08-25 12:52:19.476 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:52:19.476 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:52:19.476 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:52:19.476 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:52:19.477 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:19.477 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:19.477 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.477 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.477 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.477 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.480 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:19.481 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.481 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:52:19.481 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.481 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.481 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:52:19.481 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:52:19.481 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:52:19.481 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 5.2786ms
+2019-08-25 12:52:19.481 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 5.1862ms
+2019-08-25 12:52:19.481 -04:00 [INF] Request finished in 6.4368ms 200 application/json; charset=utf-8
+2019-08-25 12:52:19.481 -04:00 [INF] Request finished in 5.6223ms 200 application/json; charset=utf-8
+2019-08-25 12:55:17.390 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:55:17.390 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:17.391 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:17.391 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:55:17.392 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:17.392 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.6112000000000002ms
+2019-08-25 12:55:17.392 -04:00 [INF] Request finished in 2.0683ms 200 application/json; charset=utf-8
+2019-08-25 12:55:19.631 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 12:55:19.631 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:19.631 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:19.631 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 12:55:19.632 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:19.632 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.228ms
+2019-08-25 12:55:19.632 -04:00 [INF] Request finished in 1.7776ms 200 application/json; charset=utf-8
+2019-08-25 12:55:21.117 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 12:55:21.117 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:21.117 -04:00 [INF] Request finished in 0.2714ms 204 
+2019-08-25 12:55:21.118 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 12:55:21.118 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:21.119 -04:00 [INF] Request finished in 0.935ms 204 
+2019-08-25 12:55:21.120 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 12:55:21.122 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:21.123 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 12:55:21.123 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:21.124 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:21.124 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:21.124 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 12:55:21.124 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 12:55:21.124 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:21.124 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:21.124 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.125 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.125 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.125 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.127 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:21.127 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:21.127 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.127 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.128 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.128 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:21.128 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:21.128 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:21.128 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 4.4259ms
+2019-08-25 12:55:21.128 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 4.2463000000000006ms
+2019-08-25 12:55:21.128 -04:00 [INF] Request finished in 4.8582ms 200 application/json; charset=utf-8
+2019-08-25 12:55:21.128 -04:00 [INF] Request finished in 8.651ms 200 application/json; charset=utf-8
+2019-08-25 12:55:26.791 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 12:55:26.791 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:26.791 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:55:26.791 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:26.791 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:26.791 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:55:26.791 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:26.791 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:55:26.792 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:26.792 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:26.792 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 1.1115000000000002ms
+2019-08-25 12:55:26.793 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.0366ms
+2019-08-25 12:55:26.793 -04:00 [INF] Request finished in 1.4254ms 200 application/json; charset=utf-8
+2019-08-25 12:55:26.793 -04:00 [INF] Request finished in 1.7754ms 200 application/json; charset=utf-8
+2019-08-25 12:55:28.772 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 12:55:28.772 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:28.773 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:28.773 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 12:55:28.774 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:28.774 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.0714000000000001ms
+2019-08-25 12:55:28.774 -04:00 [INF] Request finished in 1.4148ms 200 application/json; charset=utf-8
+2019-08-25 12:55:47.294 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/insouts/2/12  
+2019-08-25 12:55:47.294 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:47.294 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/insouts/2/12  
+2019-08-25 12:55:47.294 -04:00 [INF] Request finished in 0.284ms 204 
+2019-08-25 12:55:47.294 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:47.294 -04:00 [INF] Request finished in 0.3484ms 204 
+2019-08-25 12:55:47.318 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/insouts/2/12 application/json 31
+2019-08-25 12:55:47.319 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:47.319 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/insouts/2/12 application/json 31
+2019-08-25 12:55:47.319 -04:00 [INF] Policy execution successful.
+2019-08-25 12:55:47.323 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:47.323 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:55:47.323 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:55:47.323 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 12:55:47.330 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:47.330 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.330 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.330 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:47.330 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.330 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.340 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:47.340 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.340 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.340 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 12:55:47.340 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.340 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 12:55:47.341 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:47.341 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:55:47.400 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) in 77.8184ms
+2019-08-25 12:55:47.400 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) in 77.818300000000008ms
+2019-08-25 12:55:47.401 -04:00 [INF] Request finished in 81.6808ms 200 application/json; charset=utf-8
+2019-08-25 12:55:47.401 -04:00 [INF] Request finished in 83.1041ms 200 application/json; charset=utf-8
+2019-08-25 12:56:57.343 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:56:57.343 -04:00 [INF] Policy execution successful.
+2019-08-25 12:56:57.343 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:56:57.343 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:56:57.345 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:56:57.345 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.6763000000000001ms
+2019-08-25 12:56:57.345 -04:00 [INF] Request finished in 2.1363ms 200 application/json; charset=utf-8
+2019-08-25 12:57:01.511 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 12:57:01.511 -04:00 [INF] Policy execution successful.
+2019-08-25 12:57:01.511 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:57:01.511 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:57:01.512 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:57:01.512 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 1.1614ms
+2019-08-25 12:57:01.512 -04:00 [INF] Request finished in 1.4677ms 200 application/json; charset=utf-8
+2019-08-25 12:57:19.176 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 12:57:19.177 -04:00 [INF] Policy execution successful.
+2019-08-25 12:57:19.177 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:57:19.177 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:57:19.178 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:57:19.179 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 2.0165ms
+2019-08-25 12:57:19.179 -04:00 [INF] Request finished in 2.9907ms 200 application/json; charset=utf-8
+2019-08-25 12:57:22.098 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 12:57:22.099 -04:00 [INF] Policy execution successful.
+2019-08-25 12:57:22.099 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:57:22.099 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:57:22.100 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:57:22.100 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 1.7255ms
+2019-08-25 12:57:22.101 -04:00 [INF] Request finished in 2.2813ms 200 application/json; charset=utf-8
+2019-08-25 12:58:07.413 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/products/3  
+2019-08-25 12:58:07.413 -04:00 [INF] Policy execution successful.
+2019-08-25 12:58:07.413 -04:00 [INF] Request finished in 0.3168ms 204 
+2019-08-25 12:58:07.415 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/products/3 application/json 220
+2019-08-25 12:58:07.415 -04:00 [INF] Policy execution successful.
+2019-08-25 12:58:07.418 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:58:07.452 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Put (InvoiceManagerWeb) with arguments (["3","InvoiceManagerWeb.ViewModel.ProductViewModel"]) - ModelState is "Valid"
+2019-08-25 12:58:07.575 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:58:07.575 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Put (InvoiceManagerWeb) in 157.50920000000002ms
+2019-08-25 12:58:07.575 -04:00 [INF] Request finished in 160.3501ms 200 application/json; charset=utf-8
+2019-08-25 12:58:07.585 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 12:58:07.585 -04:00 [INF] Policy execution successful.
+2019-08-25 12:58:07.586 -04:00 [INF] UnitOfWork Object created
+2019-08-25 12:58:07.586 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 12:58:07.587 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 12:58:07.587 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 1.7833ms
+2019-08-25 12:58:07.588 -04:00 [INF] Request finished in 2.1784ms 200 application/json; charset=utf-8
+2019-08-25 13:00:22.296 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 13:00:22.297 -04:00 [INF] Policy execution successful.
+2019-08-25 13:00:22.297 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:00:22.298 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 13:00:22.305 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:00:22.306 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 9.2263ms
+2019-08-25 13:00:22.306 -04:00 [INF] Request finished in 9.8558ms 200 application/json; charset=utf-8
+2019-08-25 13:08:25.339 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:08:25.339 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:25.339 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:25.339 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:25.357 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:25.357 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 17.8514ms
+2019-08-25 13:08:25.357 -04:00 [INF] Request finished in 18.2469ms 200 application/json; charset=utf-8
+2019-08-25 13:08:28.551 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:08:28.551 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:28.551 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:28.552 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:28.553 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:28.553 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.7479ms
+2019-08-25 13:08:28.554 -04:00 [INF] Request finished in 2.1539ms 200 application/json; charset=utf-8
+2019-08-25 13:08:30.775 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 13:08:30.775 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:30.775 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:30.775 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:30.776 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:08:30.776 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:30.777 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:30.777 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:30.778 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:30.781 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 6.2808ms
+2019-08-25 13:08:30.782 -04:00 [INF] Request finished in 7.1114ms 200 application/json; charset=utf-8
+2019-08-25 13:08:30.860 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:30.860 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 83.535800000000009ms
+2019-08-25 13:08:30.860 -04:00 [INF] Request finished in 83.9373ms 200 application/json; charset=utf-8
+2019-08-25 13:08:32.989 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:08:32.989 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:32.989 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:32.989 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:32.990 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:32.990 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.3504ms
+2019-08-25 13:08:32.990 -04:00 [INF] Request finished in 1.8108ms 200 application/json; charset=utf-8
+2019-08-25 13:08:35.283 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:08:35.283 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:35.284 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:35.284 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:08:35.286 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:35.286 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 2.2079ms
+2019-08-25 13:08:35.286 -04:00 [INF] Request finished in 2.5772ms 200 application/json; charset=utf-8
+2019-08-25 13:08:36.039 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 13:08:36.040 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:36.040 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 13:08:36.040 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:36.040 -04:00 [INF] Request finished in 0.2855ms 204 
+2019-08-25 13:08:36.040 -04:00 [INF] Request finished in 0.1634ms 204 
+2019-08-25 13:08:36.062 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 13:08:36.062 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:36.085 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 13:08:36.085 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:36.085 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:36.085 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:36.085 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 13:08:36.085 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 13:08:36.086 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:36.086 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:36.086 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.086 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.086 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.086 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.096 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:36.096 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.096 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.096 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:36.096 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.096 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:36.096 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:36.096 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:36.096 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 11.8125ms
+2019-08-25 13:08:36.097 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 11.6117ms
+2019-08-25 13:08:36.097 -04:00 [INF] Request finished in 34.6086ms 200 application/json; charset=utf-8
+2019-08-25 13:08:36.097 -04:00 [INF] Request finished in 12.4583ms 200 application/json; charset=utf-8
+2019-08-25 13:08:38.821 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:08:38.821 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:38.821 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:38.821 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:38.822 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:38.822 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.3549ms
+2019-08-25 13:08:38.822 -04:00 [INF] Request finished in 1.8366ms 200 application/json; charset=utf-8
+2019-08-25 13:08:40.552 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:08:40.552 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:40.552 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:40.553 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:08:40.553 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:40.553 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.0328ms
+2019-08-25 13:08:40.554 -04:00 [INF] Request finished in 1.4878ms 200 application/json; charset=utf-8
+2019-08-25 13:08:45.705 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 13:08:45.705 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:45.705 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 13:08:45.705 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:45.707 -04:00 [INF] Request finished in 1.504ms 204 
+2019-08-25 13:08:45.707 -04:00 [INF] Request finished in 2.5116ms 204 
+2019-08-25 13:08:45.731 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 13:08:45.732 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:45.732 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 13:08:45.733 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:45.733 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:45.733 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:45.733 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:08:45.733 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:08:45.735 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:45.735 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:45.735 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.735 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.735 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.735 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.738 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:45.738 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.738 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.738 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:45.738 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:45.738 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.738 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:45.738 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:45.738 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 5.4416ms
+2019-08-25 13:08:45.738 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 5.4709ms
+2019-08-25 13:08:45.738 -04:00 [INF] Request finished in 6.8578ms 200 application/json; charset=utf-8
+2019-08-25 13:08:45.738 -04:00 [INF] Request finished in 6.054ms 200 application/json; charset=utf-8
+2019-08-25 13:08:52.726 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 13:08:52.726 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:52.726 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:52.726 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:52.728 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:08:52.728 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:52.728 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:52.728 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:08:52.729 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:52.729 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 3.0605ms
+2019-08-25 13:08:52.729 -04:00 [INF] Request finished in 3.4562ms 200 application/json; charset=utf-8
+2019-08-25 13:08:52.729 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:52.734 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 6.0352000000000006ms
+2019-08-25 13:08:52.734 -04:00 [INF] Request finished in 6.9222ms 200 application/json; charset=utf-8
+2019-08-25 13:08:54.391 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:08:54.391 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:54.392 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:54.392 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:08:54.392 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:54.393 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 0.9406ms
+2019-08-25 13:08:54.393 -04:00 [INF] Request finished in 1.2428ms 200 application/json; charset=utf-8
+2019-08-25 13:08:59.128 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/insouts/2/12  
+2019-08-25 13:08:59.128 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:59.129 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/insouts/2/12  
+2019-08-25 13:08:59.129 -04:00 [INF] Request finished in 0.3647ms 204 
+2019-08-25 13:08:59.129 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:59.129 -04:00 [INF] Request finished in 0.3482ms 204 
+2019-08-25 13:08:59.163 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/insouts/2/12 application/json 46
+2019-08-25 13:08:59.163 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/insouts/2/12 application/json 46
+2019-08-25 13:08:59.163 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:59.163 -04:00 [INF] Policy execution successful.
+2019-08-25 13:08:59.163 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:59.163 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:08:59.164 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:08:59.164 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:08:59.166 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:59.166 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.166 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:59.166 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.166 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.167 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.170 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:59.170 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:08:59.170 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.170 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.170 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.170 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:08:59.170 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:59.170 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:08:59.170 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) in 6.8611ms
+2019-08-25 13:08:59.170 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.InsOutsSummary (InvoiceManagerWeb) in 6.8609ms
+2019-08-25 13:08:59.170 -04:00 [INF] Request finished in 7.4625ms 200 application/json; charset=utf-8
+2019-08-25 13:08:59.171 -04:00 [INF] Request finished in 8.8152ms 200 application/json; charset=utf-8
+2019-08-25 13:10:38.962 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:10:38.963 -04:00 [INF] Policy execution successful.
+2019-08-25 13:10:38.963 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:10:38.963 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:10:38.965 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:10:38.965 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 2.3509ms
+2019-08-25 13:10:38.967 -04:00 [INF] Request finished in 6.3393ms 200 application/json; charset=utf-8
+2019-08-25 13:10:41.791 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:10:41.791 -04:00 [INF] Policy execution successful.
+2019-08-25 13:10:41.791 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:10:41.792 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:10:41.792 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:10:41.793 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.1437000000000002ms
+2019-08-25 13:10:41.793 -04:00 [INF] Request finished in 1.6904ms 200 application/json; charset=utf-8
+2019-08-25 13:10:42.680 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/production-schedule/2/12  
+2019-08-25 13:10:42.680 -04:00 [INF] Policy execution successful.
+2019-08-25 13:10:42.680 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:10:42.681 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 13:10:42.686 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:10:42.686 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) in 5.9718ms
+2019-08-25 13:10:42.686 -04:00 [INF] Request finished in 6.5838ms 200 application/json; charset=utf-8
+2019-08-25 13:10:42.689 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/production-schedule/2/12  
+2019-08-25 13:10:42.689 -04:00 [INF] Policy execution successful.
+2019-08-25 13:10:42.689 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:10:42.690 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 13:10:42.695 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:10:42.695 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductionScheduleReportController.Get (InvoiceManagerWeb) in 6.0376ms
+2019-08-25 13:10:42.696 -04:00 [INF] Request finished in 6.533ms 200 application/json; charset=utf-8
+2019-08-25 13:11:21.453 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 13:11:21.454 -04:00 [INF] Policy execution successful.
+2019-08-25 13:11:21.454 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:11:21.455 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 13:11:21.458 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:11:21.459 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 5.1324000000000005ms
+2019-08-25 13:11:21.459 -04:00 [INF] Request finished in 5.6573ms 200 application/json; charset=utf-8
+2019-08-25 13:12:23.585 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 13:12:23.585 -04:00 [INF] Policy execution successful.
+2019-08-25 13:12:23.585 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:12:23.586 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 13:12:23.591 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:12:23.592 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 6.7056000000000004ms
+2019-08-25 13:12:23.592 -04:00 [INF] Request finished in 7.3502ms 200 application/json; charset=utf-8
+2019-08-25 13:14:12.622 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/store/1  
+2019-08-25 13:14:12.622 -04:00 [INF] Policy execution successful.
+2019-08-25 13:14:12.624 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:14:12.624 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) with arguments (["1"]) - ModelState is "Valid"
+2019-08-25 13:14:12.628 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:14:12.629 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) in 4.7255ms
+2019-08-25 13:14:12.629 -04:00 [INF] Request finished in 7.4094ms 200 application/json; charset=utf-8
+2019-08-25 13:15:34.041 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/1  
+2019-08-25 13:15:34.041 -04:00 [INF] Policy execution successful.
+2019-08-25 13:15:34.041 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:15:34.041 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["1"]) - ModelState is "Valid"
+2019-08-25 13:15:34.047 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:15:34.047 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 6.0591ms
+2019-08-25 13:15:34.047 -04:00 [INF] Request finished in 6.5499ms 200 application/json; charset=utf-8
+2019-08-25 13:16:31.628 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/store/2  
+2019-08-25 13:16:31.628 -04:00 [INF] Policy execution successful.
+2019-08-25 13:16:31.629 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:16:31.629 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:16:31.631 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:16:31.632 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) in 3.1327000000000003ms
+2019-08-25 13:16:31.632 -04:00 [INF] Request finished in 3.7236ms 200 application/json; charset=utf-8
+2019-08-25 13:16:34.936 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/1  
+2019-08-25 13:16:34.936 -04:00 [INF] Policy execution successful.
+2019-08-25 13:16:34.936 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:16:34.937 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["1"]) - ModelState is "Valid"
+2019-08-25 13:16:34.941 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:16:34.941 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 4.9910000000000005ms
+2019-08-25 13:16:34.942 -04:00 [INF] Request finished in 5.4099ms 200 application/json; charset=utf-8
+2019-08-25 13:17:15.940 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/store/2  
+2019-08-25 13:17:15.940 -04:00 [INF] Policy execution successful.
+2019-08-25 13:17:15.941 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:17:15.941 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:17:15.943 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:17:15.943 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.StoreController.Get (InvoiceManagerWeb) in 2.7804ms
+2019-08-25 13:17:15.944 -04:00 [INF] Request finished in 3.4949ms 200 application/json; charset=utf-8
+2019-08-25 13:17:28.073 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation/1  
+2019-08-25 13:17:28.073 -04:00 [INF] Policy execution successful.
+2019-08-25 13:17:28.074 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:17:28.074 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["1"]) - ModelState is "Valid"
+2019-08-25 13:17:28.080 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:17:28.080 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 6.2855ms
+2019-08-25 13:17:28.080 -04:00 [INF] Request finished in 6.698ms 200 application/json; charset=utf-8
+2019-08-25 13:18:08.990 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 13:18:08.990 -04:00 [INF] Policy execution successful.
+2019-08-25 13:18:08.990 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:18:08.992 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 13:18:08.999 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:18:09.001 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 10.4422ms
+2019-08-25 13:18:09.001 -04:00 [INF] Request finished in 11.5247ms 200 application/json; charset=utf-8
+2019-08-25 13:19:47.515 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 13:19:47.516 -04:00 [INF] Policy execution successful.
+2019-08-25 13:19:47.516 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:19:47.516 -04:00 [INF] Policy execution successful.
+2019-08-25 13:19:47.516 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:19:47.516 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:19:47.516 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:19:47.516 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:19:47.519 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:19:47.519 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:19:47.519 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 3.6244ms
+2019-08-25 13:19:47.519 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 3.6100000000000003ms
+2019-08-25 13:19:47.520 -04:00 [INF] Request finished in 4.5405ms 200 application/json; charset=utf-8
+2019-08-25 13:19:47.520 -04:00 [INF] Request finished in 4.0538ms 200 application/json; charset=utf-8
+2019-08-25 13:20:00.084 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:20:00.084 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:00.084 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:00.084 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:20:00.086 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:00.086 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 2.0278ms
+2019-08-25 13:20:00.086 -04:00 [INF] Request finished in 2.5561ms 200 application/json; charset=utf-8
+2019-08-25 13:20:01.866 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:20:01.866 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:01.866 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:01.866 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:20:01.868 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:01.868 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.9268ms
+2019-08-25 13:20:01.868 -04:00 [INF] Request finished in 2.5379ms 200 application/json; charset=utf-8
+2019-08-25 13:20:02.969 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 13:20:02.969 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:02.969 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:20:02.969 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:02.969 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:02.969 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:02.969 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:20:02.969 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:20:02.970 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:02.970 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:02.970 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 1.4258000000000002ms
+2019-08-25 13:20:02.971 -04:00 [INF] Request finished in 1.8207ms 200 application/json; charset=utf-8
+2019-08-25 13:20:02.971 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.722ms
+2019-08-25 13:20:02.971 -04:00 [INF] Request finished in 2.4606ms 200 application/json; charset=utf-8
+2019-08-25 13:20:24.121 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:20:24.121 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:24.121 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:24.122 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:20:24.123 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:24.123 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.7956ms
+2019-08-25 13:20:24.123 -04:00 [INF] Request finished in 2.2997ms 200 application/json; charset=utf-8
+2019-08-25 13:20:29.073 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:20:29.073 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:29.073 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:29.073 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:20:29.074 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:29.074 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.4329ms
+2019-08-25 13:20:29.075 -04:00 [INF] Request finished in 1.7926ms 200 application/json; charset=utf-8
+2019-08-25 13:20:30.836 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:20:30.836 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:30.836 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:30.836 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:20:30.837 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:30.837 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 1.1257000000000001ms
+2019-08-25 13:20:30.837 -04:00 [INF] Request finished in 1.4943ms 200 application/json; charset=utf-8
+2019-08-25 13:20:31.372 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 13:20:31.372 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:31.373 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/12  
+2019-08-25 13:20:31.373 -04:00 [INF] Request finished in 0.307ms 204 
+2019-08-25 13:20:31.373 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:31.373 -04:00 [INF] Request finished in 0.3279ms 204 
+2019-08-25 13:20:31.376 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 13:20:31.376 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:31.398 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/12 application/json 31
+2019-08-25 13:20:31.398 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:31.398 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:31.398 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:31.398 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 13:20:31.398 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","12"]) - ModelState is "Valid"
+2019-08-25 13:20:31.399 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:31.399 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.399 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:31.399 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.399 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.399 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.402 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:31.402 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:31.402 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.402 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.402 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.402 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:20:31.402 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:31.402 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:31.403 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 4.7154ms
+2019-08-25 13:20:31.403 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 5.0304ms
+2019-08-25 13:20:31.403 -04:00 [INF] Request finished in 5.3862ms 200 application/json; charset=utf-8
+2019-08-25 13:20:31.403 -04:00 [INF] Request finished in 26.9294ms 200 application/json; charset=utf-8
+2019-08-25 13:20:47.251 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/10  
+2019-08-25 13:20:47.251 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-summary-by-route/2/10  
+2019-08-25 13:20:47.251 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:47.251 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:47.251 -04:00 [INF] Request finished in 0.179ms 204 
+2019-08-25 13:20:47.251 -04:00 [INF] Request finished in 0.325ms 204 
+2019-08-25 13:20:47.277 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/10 application/json 33
+2019-08-25 13:20:47.277 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:47.277 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-summary-by-route/2/10 application/json 33
+2019-08-25 13:20:47.278 -04:00 [INF] Policy execution successful.
+2019-08-25 13:20:47.278 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:47.278 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:20:47.278 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","10"]) - ModelState is "Valid"
+2019-08-25 13:20:47.278 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) with arguments (["2","10"]) - ModelState is "Valid"
+2019-08-25 13:20:47.279 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:47.279 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:47.279 -04:00 [INF] Week > 0 Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.279 -04:00 [INF] Week > 0 Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.279 -04:00 [INF] Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.279 -04:00 [INF] Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.282 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:47.282 -04:00 [INF] Week > 0 Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.282 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:20:47.282 -04:00 [INF] Week > 0 Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.282 -04:00 [INF] Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.282 -04:00 [INF] Start End days: "2018-10-14T00:00:00.0000000" "2018-10-20T00:00:00.0000000" 
+2019-08-25 13:20:47.282 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:47.282 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:20:47.283 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 4.8994ms
+2019-08-25 13:20:47.283 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.GetSalesSummaryByRoute (InvoiceManagerWeb) in 4.8791ms
+2019-08-25 13:20:47.283 -04:00 [INF] Request finished in 5.8671ms 200 application/json; charset=utf-8
+2019-08-25 13:20:47.283 -04:00 [INF] Request finished in 5.8651ms 200 application/json; charset=utf-8
+2019-08-25 13:21:17.711 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:21:17.711 -04:00 [INF] Policy execution successful.
+2019-08-25 13:21:17.711 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:21:17.712 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:21:17.713 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:21:17.714 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 2.1733000000000002ms
+2019-08-25 13:21:17.714 -04:00 [INF] Request finished in 2.6953ms 200 application/json; charset=utf-8
+2019-08-25 13:21:19.208 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:21:19.208 -04:00 [INF] Policy execution successful.
+2019-08-25 13:21:19.209 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:21:19.209 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:21:19.210 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:21:19.210 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 1.5011ms
+2019-08-25 13:21:19.210 -04:00 [INF] Request finished in 1.9437ms 200 application/json; charset=utf-8
+2019-08-25 13:21:21.763 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:21:21.763 -04:00 [INF] Policy execution successful.
+2019-08-25 13:21:21.764 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:21:21.764 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:21:21.764 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:21:21.764 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 0.94070000000000009ms
+2019-08-25 13:21:21.765 -04:00 [INF] Request finished in 1.2646ms 200 application/json; charset=utf-8
+2019-08-25 13:21:27.860 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 13:21:27.861 -04:00 [INF] Policy execution successful.
+2019-08-25 13:21:27.861 -04:00 [INF] Request finished in 0.463ms 204 
+2019-08-25 13:21:27.862 -04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/salesreport/sales-audit-by-route/2/12  
+2019-08-25 13:21:27.873 -04:00 [INF] Policy execution successful.
+2019-08-25 13:21:27.874 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 13:21:27.875 -04:00 [INF] Policy execution successful.
+2019-08-25 13:21:27.875 -04:00 [INF] Request finished in 13.9798ms 204 
+2019-08-25 13:21:27.876 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:21:27.878 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/salesreport/sales-audit-by-route/2/12 application/json 49
+2019-08-25 13:21:27.878 -04:00 [INF] Policy execution successful.
+2019-08-25 13:21:27.878 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:21:27.878 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:21:27.878 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) with arguments (["2","12","DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:21:27.879 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:21:27.879 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:21:27.879 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.879 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.879 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.879 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.882 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:21:27.882 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:21:27.883 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.883 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.883 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.883 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:21:27.883 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:21:27.883 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:21:27.883 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 5.2447ms
+2019-08-25 13:21:27.883 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.SalesReportController.SalesAuditByRoute (InvoiceManagerWeb) in 7.3228ms
+2019-08-25 13:21:27.883 -04:00 [INF] Request finished in 5.7197ms 200 application/json; charset=utf-8
+2019-08-25 13:21:27.883 -04:00 [INF] Request finished in 9.6427ms 200 application/json; charset=utf-8
+2019-08-25 13:22:25.054 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/billinginformation?Page=undefined  
+2019-08-25 13:22:25.054 -04:00 [INF] Policy execution successful.
+2019-08-25 13:22:25.054 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:22:25.055 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Invalid"
+2019-08-25 13:22:25.059 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:22:25.059 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.BillingInformationController.Get (InvoiceManagerWeb) in 5.0538ms
+2019-08-25 13:22:25.059 -04:00 [INF] Request finished in 5.5113ms 200 application/json; charset=utf-8
+2019-08-25 13:27:34.154 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:27:34.155 -04:00 [INF] Policy execution successful.
+2019-08-25 13:27:34.155 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:27:34.155 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:27:34.161 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders?Page=0  
+2019-08-25 13:27:34.161 -04:00 [INF] Policy execution successful.
+2019-08-25 13:27:34.172 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:27:34.172 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 17.6558ms
+2019-08-25 13:27:34.172 -04:00 [INF] Request finished in 18.0923ms 200 application/json; charset=utf-8
+2019-08-25 13:27:34.176 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:27:34.189 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:27:34.199 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:27:34.199 -04:00 [INF] Policy execution successful.
+2019-08-25 13:27:34.199 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:27:34.199 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:27:34.200 -04:00 [INF] GetAll orders SQL: SELECT o.*, s.*, b.*, r.* , rws.* FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '0001-01-01 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC LIMIT @offset,10 
+2019-08-25 13:27:34.204 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:27:34.204 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 5.4293000000000005ms
+2019-08-25 13:27:34.205 -04:00 [INF] Request finished in 6.1558ms 200 application/json; charset=utf-8
+2019-08-25 13:27:34.233 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders?Page=0&YearId=2&Week=12  
+2019-08-25 13:27:34.233 -04:00 [INF] Policy execution successful.
+2019-08-25 13:27:34.233 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:27:34.234 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:27:34.235 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:27:34.235 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:27:34.235 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:27:34.235 -04:00 [INF] GetAll orders SQL: SELECT o.*, s.*, b.*, r.* , rws.* FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC LIMIT @offset,10 
+2019-08-25 13:27:34.254 -04:00 [INF] GetAll orders Ids SQL: SELECT o.Id FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC 
+2019-08-25 13:27:34.255 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:27:34.255 -04:00 [INF] GetAll orders Ids SQL: SELECT o.Id FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '0001-01-01 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC 
+2019-08-25 13:27:34.257 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:27:34.289 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) in 55.2546ms
+2019-08-25 13:27:34.289 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) in 113.0661ms
+2019-08-25 13:27:34.289 -04:00 [INF] Request finished in 56.1324ms 200 application/json; charset=utf-8
+2019-08-25 13:27:34.289 -04:00 [INF] Request finished in 127.8368ms 200 application/json; charset=utf-8
+2019-08-25 13:27:39.445 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders/allSearchedDotmatrix.html?Page=0&YearId=2&Week=12  
+2019-08-25 13:27:39.448 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:27:39.449 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.GetAllDotMatrix (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:27:39.468 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:27:39.468 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:27:39.468 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:27:39.468 -04:00 [INF] GetAll orders SQL: SELECT o.*, s.*, b.*, r.* , rws.* FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC LIMIT @offset,10 
+2019-08-25 13:27:39.519 -04:00 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2019-08-25 13:27:39.520 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.GetAllDotMatrix (InvoiceManagerWeb) in 72.3794ms
+2019-08-25 13:27:39.521 -04:00 [INF] Request finished in 76.0735ms 200 text/html
+2019-08-25 13:29:11.456 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders/39  
+2019-08-25 13:29:11.456 -04:00 [INF] Policy execution successful.
+2019-08-25 13:29:11.459 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:29:11.459 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) with arguments (["39"]) - ModelState is "Valid"
+2019-08-25 13:29:11.462 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:29:11.463 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) in 4.1198000000000006ms
+2019-08-25 13:29:11.463 -04:00 [INF] Request finished in 6.7444ms 200 application/json; charset=utf-8
+2019-08-25 13:29:11.498 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products  
+2019-08-25 13:29:11.498 -04:00 [INF] Policy execution successful.
+2019-08-25 13:29:11.499 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:29:11.499 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:29:11.501 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:29:11.502 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.ProductsController.Get (InvoiceManagerWeb) in 3.1051ms
+2019-08-25 13:29:11.502 -04:00 [INF] Request finished in 3.4389ms 200 application/json; charset=utf-8
+2019-08-25 13:41:54.713 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/year-list  
+2019-08-25 13:41:54.713 -04:00 [INF] Policy execution successful.
+2019-08-25 13:41:54.714 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:41:54.714 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) with arguments (null) - ModelState is "Valid"
+2019-08-25 13:41:54.728 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders?Page=0  
+2019-08-25 13:41:54.728 -04:00 [INF] Policy execution successful.
+2019-08-25 13:41:54.728 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:41:54.728 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:41:54.728 -04:00 [INF] GetAll orders SQL: SELECT o.*, s.*, b.*, r.* , rws.* FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '0001-01-01 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC LIMIT @offset,10 
+2019-08-25 13:41:54.734 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:41:54.734 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetYearList (InvoiceManagerWeb) in 20.255100000000002ms
+2019-08-25 13:41:54.734 -04:00 [INF] Request finished in 20.9837ms 200 application/json; charset=utf-8
+2019-08-25 13:41:54.759 -04:00 [INF] GetAll orders Ids SQL: SELECT o.Id FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '0001-01-01 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC 
+2019-08-25 13:41:54.761 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:41:54.761 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) in 33.144400000000005ms
+2019-08-25 13:41:54.761 -04:00 [INF] Request finished in 33.4625ms 200 application/json; charset=utf-8
+2019-08-25 13:41:54.857 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/weekly-schedule/2/last-saved-week  
+2019-08-25 13:41:54.857 -04:00 [INF] Policy execution successful.
+2019-08-25 13:41:54.858 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:41:54.858 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) with arguments (["2"]) - ModelState is "Valid"
+2019-08-25 13:41:54.860 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:41:54.861 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.WeeklyScheduleController.GetLastSavedWeek (InvoiceManagerWeb) in 3.0514ms
+2019-08-25 13:41:54.861 -04:00 [INF] Request finished in 4.1334ms 200 application/json; charset=utf-8
+2019-08-25 13:41:54.897 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders?Page=0&YearId=2&Week=12  
+2019-08-25 13:41:54.897 -04:00 [INF] Policy execution successful.
+2019-08-25 13:41:54.897 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:41:54.898 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:41:54.901 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:41:54.901 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:41:54.901 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:41:54.901 -04:00 [INF] GetAll orders SQL: SELECT o.*, s.*, b.*, r.* , rws.* FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC LIMIT @offset,10 
+2019-08-25 13:41:54.909 -04:00 [INF] GetAll orders Ids SQL: SELECT o.Id FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC 
+2019-08-25 13:41:54.910 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:41:54.911 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) in 13.974ms
+2019-08-25 13:41:54.912 -04:00 [INF] Request finished in 14.7701ms 200 application/json; charset=utf-8
+2019-08-25 13:42:08.816 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders?Page=0&Route=300&YearId=2&Week=12  
+2019-08-25 13:42:08.816 -04:00 [INF] Policy execution successful.
+2019-08-25 13:42:08.817 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:42:08.817 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:42:08.818 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:42:08.818 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:42:08.818 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:42:08.818 -04:00 [INF] GetAll orders SQL: SELECT o.*, s.*, b.*, r.* , rws.* FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  CONCAT(r.RouteNumber ,'.', COALESCE(s.RouteOrderNo,'')) LIKE '300%'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC LIMIT @offset,10 
+2019-08-25 13:42:08.849 -04:00 [INF] GetAll orders Ids SQL: SELECT o.Id FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  CONCAT(r.RouteNumber ,'.', COALESCE(s.RouteOrderNo,'')) LIKE '300%'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC 
+2019-08-25 13:42:08.851 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:42:08.851 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) in 34.7926ms
+2019-08-25 13:42:08.851 -04:00 [INF] Request finished in 35.358ms 200 application/json; charset=utf-8
+2019-08-25 13:42:18.046 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/orders?Page=0&Route=100&YearId=2&Week=12  
+2019-08-25 13:42:18.046 -04:00 [INF] Policy execution successful.
+2019-08-25 13:42:18.047 -04:00 [INF] UnitOfWork Object created
+2019-08-25 13:42:18.047 -04:00 [INF] Executing action method InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) with arguments (["DAL.Models.SearchParam"]) - ModelState is "Valid"
+2019-08-25 13:42:18.048 -04:00 [INF] selected year: {"Id":2,"FirstSundayOfTheYear":"2018-08-05T00:00:00.0000000","LastDayOfTheYear":"2019-08-03T00:00:00.0000000","IsCurrentYear":true,"$type":"SundayOfTheYear"} 
+2019-08-25 13:42:18.048 -04:00 [INF] Week > 0 Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:42:18.048 -04:00 [INF] Start End days: "2018-10-28T00:00:00.0000000" "2018-11-03T00:00:00.0000000" 
+2019-08-25 13:42:18.048 -04:00 [INF] GetAll orders SQL: SELECT o.*, s.*, b.*, r.* , rws.* FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  CONCAT(r.RouteNumber ,'.', COALESCE(s.RouteOrderNo,'')) LIKE '100%'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC LIMIT @offset,10 
+2019-08-25 13:42:18.053 -04:00 [INF] GetAll orders Ids SQL: SELECT o.Id FROM  orders AS o  JOIN stores s ON o.StoreId = s.Id  JOIN billinginformation b ON s.BillingInformationId = b.Id   JOIN deliveryroutes r ON s.RouteId = r.Id  LEFT JOIN routeweeklyschedules rws ON o.RouteWeeklyScheduleId = rws.Id  WHERE  o.RecordStatus ='ACT'  AND  CONCAT(r.RouteNumber ,'.', COALESCE(s.RouteOrderNo,'')) LIKE '100%'  AND  o.InvoiceDate >= '2018-10-28 12:00:00 AM'  AND  o.InvoiceDate <= '2018-11-03 12:00:00 AM'  ORDER BY  r.RouteNumber ASC, s.RouteOrderNo ASC, o.InvoiceDate DESC 
+2019-08-25 13:42:18.054 -04:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2019-08-25 13:42:18.054 -04:00 [INF] Executed action InvoiceManagerWeb.Controllers.OrdersController.Get (InvoiceManagerWeb) in 7.6235ms
+2019-08-25 13:42:18.054 -04:00 [INF] Request finished in 7.9991ms 200 application/json; charset=utf-8

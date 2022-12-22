@@ -1,0 +1,67 @@
+<div>
+  <!-- Route List -->
+  <div class="row  datatable-search-bar" *ngIf="!showConfirmationPage">
+    <div class=" col-md-8">
+      <form #scheduleForm="ngForm">
+        <table>
+          <tr>
+            <td style="padding-right:5px;">
+              <select class="form-control" [compareWith]="compareWithYearId" name="scheduleYear" [(ngModel)]="scheduleYear" (change)="yearChanged()">
+                <option *ngFor="let year of (yearList$ | async)" [ngValue]="year">
+                      {{year.FirstSundayOfTheYear | date:'yyyy-MMM-dd'}}
+                </option>
+            </select>
+            </td>
+            <td><input class="form-control" type="text" name="scheduleWeek" [(ngModel)]="scheduleWeek"></td>
+            <td><button type="button" class="btn btn-primary" (click)="loadSchedules()" style="margin-left:5px"> 
+              Load Schedules
+            </button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div *ngIf="rows && rows.length > 0" class="col-md-4 text-right">
+      <button type="button" class="btn btn-primary" (click)="continueClicked()">Continue <i class="fa fa-angle-right"></i></button>
+    </div>
+  </div>
+
+  <div class="row  datatable-search-bar" *ngIf="showConfirmationPage">
+    <div class="col-md-12 text-right">
+      <button type="button" class="btn btn-primary" (click)="backClick()"><i class="fa fa-angle-left"></i> Back </button>
+      <button type="button" class="btn btn-success" (click)="saveClick()">Save</button>
+    </div>
+  </div>
+
+  <ngx-datatable class="material" [rows]="rows" [columns]="cols" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+    [rowHeight]="'auto'">
+  </ngx-datatable>
+  <ng-template #deliveryDateTemplate let-row="row" let-value="value">
+    <table>
+      <tr>
+        <td>
+          <input *ngIf="!showConfirmationPage" class="form-control" placeholder="yyyy-mm-dd" name="DeliveryDate" [(ngModel)]="row.DeliveryDate"
+            ngbDatepicker #d="ngbDatepicker">
+          <span>{{row.DeliveryDate | date:'yyyy-MMM-dd EEEE'}}</span>
+        </td>
+        <!-- <td>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;">
+                          <i class="fa fa-calendar"></i>
+                      </button>
+          </div>
+        </td> -->
+      </tr>
+    </table>
+  </ng-template>
+  <ng-template #productionDayTemplate let-row="row" let-value="value">
+    {{value>0 ? weekDays[value-1]: '-'}}
+  </ng-template>
+  <ng-template #actionsTemplate let-row="row">
+    <a class="btn btn-link btn-xs" href="javascript:;" tooltip="Edit" (click)="edit(row)">
+                    <i class="fa fa-edit"></i>
+                </a>
+  </ng-template>
+
+  <!-- Route List End -->
+
+</div>

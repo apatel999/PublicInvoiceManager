@@ -1,0 +1,117 @@
+<div class="content-wrapper" style="height:1000px">
+  <section class="content-header">
+      <div class="col-xs-12">
+        <h2>
+          Year To Date Customer Units Report
+          <span style="font-size: 80%"  *ngIf="(report$ | async) as report">
+            (<span>Week: {{report.Week}}</span>
+            <span style="margin-left:20px">Date: {{report.ReportDate | date:'yyyy-MMM-dd EEEE'}}</span> )
+          </span>
+        </h2>
+      </div>
+  </section>
+
+<section class="content">
+  <div>
+    <form #scheduleForm="ngForm">
+      <table>
+        <tr>
+          <td style="padding-right:5px;">
+            <select class="form-control" [compareWith]="compareWithYearId" name="scheduleYear" [(ngModel)]="scheduleYear" (change)="yearChanged()">
+              <option *ngFor="let year of (yearList$ | async)" [ngValue]="year">
+                    {{year.FirstSundayOfTheYear | date:'yyyy-MMM-dd EEEE'}}
+              </option>
+          </select>
+          </td>
+          <td><input type="text" class="form-control"  name="scheduleWeek" [(ngModel)]="scheduleWeek"></td>
+          <td><input type="text" class="form-control" placeholder="Route" name="route" [(ngModel)]="route"></td>
+          <td><button type="button" class="btn btn-primary" (click)="loadReport()" style="margin-left:5px">
+            Load
+          </button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <!-- Report Table-->
+  <div *ngIf="(reportData$ | async) as reportData">
+    <style>
+      .customerunits-table-heading{
+        background-color: #cccccc;
+      }
+      .customerunits-table-heading tr th, .customerunits-table-heading tr td {
+        border: 1px solid #000000 ;
+      }
+
+      .customerunits-table tr th, .customerunits-table tr td {
+        border: 1px solid #cccccc ;
+      }
+
+      .customerunits-table tr th, .customerunits-table  tr td {
+        padding: 2px;
+      }
+      </style>
+      <table width="1250px" class="table-hover" >
+        <tr>
+          <td>
+            <table width="1250px" class="customerunits-table-heading">
+              <thead>
+              <tr>
+                <th width="400px" rowspan="2">
+                  Product
+                </th>
+                <th width="100px" colspan="3">YTD UNITS</th>
+                <!-- <th width="100px">Sold</th>
+                <th width="100px">%</th> -->
+                <th width="100px" colspan="3">YTD <- WEEKS</th>
+                <!-- <th width="100px">Sold</th>
+                <th width="100px">%</th> -->
+                <th width="100px" rowspan="2">Check</th>
+                <th rowspan="2">Recommended</th>
+              </tr>
+              <tr>
+                <!-- <th width="400px">
+                  Product
+                </th> -->
+                <th width="100px">Ins</th>
+                <th width="100px">Sold</th>
+                <th width="100px">%</th>
+                <th width="100px">Ins</th>
+                <th width="100px">Sold</th>
+                <th width="100px">%</th>
+                <!-- <th width="100px">Check</th>
+                <th width="100px">Recommended</th> -->
+              </tr>
+            </thead>
+          </table>
+          </td>
+        </tr>
+
+        <tr *ngFor="let row of reportData">
+          <td>
+            <div style="padding: 5px; font-weight:bold;">
+              {{row.Store.Route.RouteNumber}}&#46;{{row.Store.RouteOrderNo}}  {{row.Store. BillingInformation.Name}} {{row.Store.Address1}}
+            </div>
+            <table width="1250px" class="customerunits-table">
+                <tr *ngFor="let ytdUnit of row.YtdUnits">
+
+                  <td width="400px">
+                    {{ytdUnit.Product.Productcode}}
+                    {{ytdUnit.Product.Name}}
+                  </td>
+                  <td width="100px">{{ytdUnit.YtdIns}}</td>
+                  <td width="100px">{{ytdUnit.YtdSold}}</td>
+                  <td width="100px">{{ytdUnit.YtdPercent}}</td>
+                  <td width="100px">{{ytdUnit.YtdMinusHolidayIns}}</td>
+                  <td width="100px">{{ytdUnit.YtdMinusHolidaySold}}</td>
+                  <td width="100px">{{ytdUnit.YtdMinusHolidayPercent}}</td>
+                  <td width="100px">{{ytdUnit.Check}}</td>
+                  <td>{{ytdUnit.Recommended}}</td>
+                </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+  </div>
+ </section>
+</div>

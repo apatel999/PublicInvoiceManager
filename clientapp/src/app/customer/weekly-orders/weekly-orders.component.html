@@ -1,0 +1,95 @@
+<div class="tabs-content-wrapper">
+  <div class="box box-primary">
+    <div class="box-header with-border">
+      <h3 class="box-title">
+      </h3>
+      <button class="btn btn-sm pull-right btn-primary" type="button" (click)="add(formWindow)">
+          <i class="fa fa-plus" aria-hidden="true"></i> &nbsp;New Item
+      </button>
+    </div>
+    <div class="box-body">
+      <table *ngIf="true || weeklyOrder.Items?.length>0" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th></th>
+          </tr>
+        </thead>
+        <!-- Items list -->
+        <tr *ngFor="let item of weeklyOrder?.Items">
+          <td>
+            {{item?.Product?.Name}}
+          </td>
+          <td>{{item?.Product?.Price}}</td>
+          <td>
+            {{item.Quantity}}
+          </td>
+          <td>
+            <!-- <button style="margin-right:15px;" type="button" class="btn btn-outline-danger btn-sm" (click)="remove(item)">
+              <i class="fa fa-trash" aria-hidden="true"></i>
+            </button> -->
+            <a style="margin-right:15px;" href="javascript:void(0);" (click)="remove(item)">
+                <span class="glyphicon glyphicon-trash"></span> Delete
+            </a>
+
+            <a href="javascript:void(0);" (click)="edit(formWindow, item)">
+                <span class="glyphicon glyphicon-edit"></span> Edit
+            </a>
+          </td>
+        </tr>
+        <!-- Items list end -->
+        <tr *ngIf="weeklyOrder?.Items?.length<=0">
+          <td colspan="4">
+            <span>No item added. &nbsp;&nbsp;&nbsp;</span>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Add/Edit form -->
+      <ng-template #formWindow let-c="close" let-d="dismiss" class="in">
+        <form #form="ngForm" (ngSubmit)="form.valid? save():''" novalidate>
+          <div class="modal-header">
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            <h4 class="modal-title">Add new item</h4>
+          </div>
+
+          <div class="modal-body">
+            <div class="form-group" [ngClass]="{'has-error':form.submitted && ProductId.invalid }">
+              <label for="route-{{uniqueId}}">Product</label>
+              <div>
+                <select class="form-control" attr.id="route-{{uniqueId}}" required [(ngModel)]="formModel.ProductId" name="ProductId" #ProductId="ngModel">
+                <option>Select Product</option>
+                <option *ngFor="let product of (allProducts);" [value]="product.Id">{{product.Name}} - ({{product.Price}})</option>
+              </select>
+                <span *ngIf="form.submitted && ProductId?.errors?.required" class="help-block">Required field</span>
+              </div>
+            </div>
+            <div class="form-group" [ngClass]="{'has-error':form.submitted && Quantity.invalid }">
+              <label for="route-{{uniqueId}}">Quantity</label>
+              <div>
+                <input type="text" attr.id="route-{{uniqueId}}" name="Quantity" class="form-control" [(ngModel)]="formModel.Quantity" #Quantity="ngModel"
+                  required />
+                <span *ngIf="form.submitted && Quantity?.errors?.required" class="help-block">Required field</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left" (click)="c('Close click')">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </form>
+      </ng-template>
+      <!-- Add/Edit form end-->
+    </div>
+
+    <!-- <div class="box-footer">
+    </div> -->
+  </div>
+
+
+</div>

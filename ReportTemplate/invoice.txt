@@ -1,0 +1,7 @@
+@model DAL.Models.Order
+ ____________________________________________
+|	                   |       WHOLESALE     |	
+| IN  |  OUT  | SALES  |  COST/ea     AMOUNT | RETAIL/ea
+@foreach (var item in @Model.OrderItems){
+|@item.ItemsOrdered| @item.ItemsReturned | @item.ItemsSold | @item.ItemPrice  = $ @item.SubTotal | @item.RegularPrice
+}

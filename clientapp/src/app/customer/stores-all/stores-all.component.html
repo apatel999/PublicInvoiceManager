@@ -1,0 +1,57 @@
+<div class="content-wrapper" style="height: 3500px;">
+
+  <section class="content-header">
+    <div class="col-xs-12">
+      <h1>
+        All Stores
+      </h1>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="row  datatable-search-bar">
+      <div class=" col-md-8">
+        <search (searchButtonClick)="onSearchChange($event)" (reset)="onSearchReset()"></search>
+      </div>
+    </div>
+
+    <ngx-datatable #customersTable class="material" [rows]="rows" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+      [rowHeight]="'auto'" (page)='pageChange($event)' [externalPaging]="true" [count]="totalRows" [offset]="pageOffSet" [limit]="100">
+
+      <!-- Row Detail Template -->
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <span>{{row.Route?.RouteNumber}}&#46;{{row?.RouteOrderNo}}</span>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <strong>{{row.BillingInformation.Name}}</strong>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <div><span>{{row.Address1}}</span><span *ngIf="row.Address2">, {{row.Address2}}</span>
+            <span>{{row.City}}</span>
+            <span>{{row.State}}</span>
+            <span>{{row.PostalCode}}</span>
+          </div>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <span>{{row.Status}}</span>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <a [routerLink]="['/stores/',row.Id]"><i class="glyphicon glyphicon-edit"></i>  Edit</a>
+        </ng-template>
+      </ngx-datatable-column>
+    </ngx-datatable>
+  </section>
+</div>

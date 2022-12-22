@@ -1,0 +1,25 @@
+<div class="tabs-content-wrapper">
+  <!-- Billing Detail -->
+  <div class="col-md-6 col-nopadding">
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">Billing Information</h3>
+        <a class="pull-right" [routerLink]="['/customers/',storeModel?.BillingInformationId]"><i class="glyphicon glyphicon-edit"></i>  Edit</a>
+      </div>
+      <div class="box-body">
+        <billing-info-form [model]="storeModel?.BillingInformation" [editableForm]="false"></billing-info-form>
+      </div>
+    </div>
+  </div>
+  <!-- Store form -->
+  <div class="col-md-6">
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">Store Information</h3>
+      </div>
+      <div class="box-body">
+        <store-form [model]="storeModel"></store-form>
+      </div>
+    </div>
+  </div>
+</div>

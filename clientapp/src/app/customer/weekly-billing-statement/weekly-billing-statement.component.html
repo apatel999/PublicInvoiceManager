@@ -1,0 +1,82 @@
+<div class="tabs-content-wrapper">
+
+  <div class="no-print">
+    <form #scheduleForm="ngForm">
+      <table>
+        <tr>
+          <td style="padding-right:5px;">
+            <select class="form-control" [compareWith]="compareWithYearId" name="selectedYear" [(ngModel)]="selectedYear" (change)="yearChanged()">
+                  <option *ngFor="let year of (yearList$ | async)" [ngValue]="year">
+                          {{year.FirstSundayOfTheYear | date:'yyyy-MMM-dd EEEE'}}
+                    </option>
+                </select>
+          </td>
+          <td><input class="form-control" type="text" name="selectedWeek" [(ngModel)]="selectedWeek" placeholder="Enter Week Number"></td>
+          <td>
+            <button type="button" class="btn btn-primary" (click)="loadStatement()" style="margin-left:5px">
+                  Generate Statement
+                </button>
+
+            <button type="button" class="btn btn-primary" style="margin-left:5px" *ngIf="(statement$ | async) as statement" (click)="downloadCSV(statement)">Download CSV</button>
+            <a href="javascript:window.print()" class="btn btn-primary" style="margin-left:5px"><i class="fa fa-print"></i> Print</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <section class="invoice" *ngIf="(statement$ | async) as statement">
+    <div class="row">
+
+      <div class="col-xs-12">
+        <div style="font-size: 80%" class="pull-right">
+          <span style="margin-left:20px">Year: {{selectedYear.FirstSundayOfTheYear | date:'dd/MM/yyyy'}}</span> <span>Week: {{selectedWeek}}</span>
+        </div>
+        <h2 class="page-header">Camlin Flowers</h2>
+
+      </div>
+    </div>
+
+    <table width="100%">
+      <thead>
+        <th>
+          Store Number
+        </th>
+        <th>
+          Invoice
+        </th>
+        <th>
+          Date
+        </th>
+        <th>
+          NET
+        </th>
+        <th>
+          HST
+        </th>
+        <th>
+          Total
+        </th>
+      </thead>
+      <tr *ngFor="let item of statement.StatementItems">
+        <td>{{item.StoreNumber}}</td>
+        <td>{{item.InvoiceNumber}}</td>
+        <td>{{item.CreateDate | date:'dd/MM/yyyy'}}</td>
+        <td>{{item.SubTotal | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+        <td>{{item.TaxAmount | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+        <td>{{item.Total | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+      </tr>
+      <tr style="border-bottom:solid 3px #666;">
+        <td colspan="6"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{grandSubTotal | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+        <td>{{grandTaxAmount | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+        <td>{{grandTotal | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+      </tr>
+    </table>
+  </section>
+</div>

@@ -1,0 +1,10 @@
+<table width="100%">
+  <tr>
+    <td width="20%"><input type="text" class="form-control" placeholder="Route" [(ngModel)]="searchParam.Route"></td>
+    <td width="40%"><input type="text" class="form-control" placeholder="Customer Name" [(ngModel)]="searchParam.CustomerName"></td>
+    <td width="40%">
+      <button type="button" class="btn btn-default" (click)="search()" style="margin-left:5px"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+      <button type="button" class="btn btn-default" (click)="resetSearch()"><i class="fa" aria-hidden="true" ></i> Reset</button>
+    </td>
+  </tr>
+</table>

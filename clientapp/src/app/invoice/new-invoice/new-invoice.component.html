@@ -1,0 +1,97 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      New Order
+    </h1>
+  </section>
+
+  <!-- Main content -->
+  <section class="invoice">
+    <!-- title row -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="page-header">
+          Camlin Flowers
+        </h2>
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- info row -->
+    <div class="row invoice-info">
+      <div class="col-sm-4 invoice-col">
+        <address>
+          P.O. BOX 3,STATION MAIN,<br> Peterborough<br>ON, K9J 6Y5<br>Phone: (800) 642 9913<br/>Fax: (705) 277 2912<br/>Email:
+          sales@camlinflowers.ca
+        </address>
+      </div>
+      <!-- .col -->
+      <div class="col-sm-4 invoice-col">
+
+      </div>
+      <!-- /.col -->
+      <div class="col-sm-4 invoice-col">
+        <b *ngIf="order?.InvoiceNumber<=0">New Order</b>
+        <b *ngIf="order.InvoiceNumber>0">Invoice #: {{order.InvoiceNumber}}</b>
+        <br/>
+        <b>Date:</b> {{order?.CreateDate | date:'dd/MM/yyyy'}}<br>
+        <div>
+          <strong>Sold To: </strong>
+          <br/><strong>{{order?.StoreInfo?.BillingInformation?.Name}}</strong>
+          <address>
+            {{order?.StoreInfo?.BillingInformation?.Address1}} {{order?.StoreInfo?.BillingInformation?.Address2}}
+            <br/> {{order?.StoreInfo?.BillingInformation?.City}}
+            <br/> {{order?.StoreInfo?.BillingInformation?.State}}, {{order?.StoreInfo?.BillingInformation?.PostalCode}}
+            <br/> <span *ngIf="order?.StoreInfo?.BillingInformation?.Phone">Phone: {{order?.StoreInfo?.BillingInformation?.Phone}}</span>
+            <br/> <span *ngIf="order?.StoreInfo?.BillingInformation?.Email">Email: {{order?.StoreInfo?.BillingInformation?.Email}}</span>
+          </address>
+        </div>
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+    <div>
+      <invoice-items [order]="order" [isNewMode]="true"></invoice-items>
+      <div>
+        <strong>WATER CONDITION: </strong>
+        <div>CLEAN_________ DIRTY _________</div>
+        <div>CLEAN VASES & WATER INCREASE SALES</div>
+      </div>
+      <br/>
+      <br/>
+      <table width="100%" style="margin-top:10px; margin-bottom:10px">
+        <tr>
+          <td style="border-top:solid 1px #999; text-align: center;">STORE REPRESENTATIVE</td>
+          <td></td>
+          <td style="border-top:solid 1px #999; text-align: center;">SALES REPRESENTATIVE</td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>*** THANK YOU ***</td>
+          <td class="text-right">{{order?.StoreInfo?.Route?.RouteNumber + "." + order?.StoreInfo?.RouteOrderNo}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- this row will not appear when printing -->
+    <div class="row no-print" style="margin-top: 50px;">
+      <div class="col-xs-12">
+        <ng-container *ngIf="order?.Id > 0">
+          <a href="javascript:window.print()" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+          <button type="button" (click)="opendotmatrixLayout()" class="btn btn-default" style="margin-right: 5px;">
+          <i class="fa fa-download"></i> Dot Matrix Layout
+        </button>
+        </ng-container>
+        <button type="button" class="btn btn-success pull-right" (click)="addOrder()">Save Order</button>
+      </div>
+    </div>
+  </section>
+  <!-- /.content -->
+  <div class="clearfix"></div>
+</div>
+<!-- /.content-wrapper -->

@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+.form-horizontal .form-group {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.alert{
+    margin-bottom: 5px;
+}
+.alert-success {
+    color: #3c763d !important;
+    background-color: #dff0d8  !important;; 
+    border-color: #d6e9c6  !important;
+}
+
+.alert-danger {
+    color: #a94442 !important;
+    background-color: #f2dede !important ;
+    border-color: #ebccd1 !important;
+}
+.alert-warning {
+    color: #8a6d3b !important;
+    background-color: #fcf8e3 !important;
+    border-color: #faebcc !important;
+}
+
+modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: .5;
+    
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .15s linear;
+}
+.modal.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transform: translate(0,25%);
+    transform: translate(0,25%);
+}
+
+.content-wrapper {
+    min-height: 1200px;
+    /*font-size: 20px;*/
+}
+
+.tabs-content-wrapper{
+    margin-top: 20px;
+    min-height: 1200px;
+}
+.box-primary {
+    padding: 30px 30px;
+}
+
+.col-nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.productSelectBox {
+    margin-bottom: 10px
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #3c8dbc;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: 1px solid #3c8dbc;
+    border-bottom: 1px solid transparent;
+}
+
+.sidebar-menu>li>.treeview-menu >li{
+    margin-left:20px;
+}
+
+.sidebar-menu{
+    font-size: 16px;
+}
+.sidebar-menu>li>a{
+    padding: 15px;
+}
+
+.sidebar-menu> .menu-open1{
+    display:block;
+}
+
+.sidebar-menu>li>.treeview-menu >li > a> i.fa-circle-o,
+.sidebar-menu>li>.treeview-menu >li > a> i.fa-circle {
+    font-size:10px;
+}
+
+.sidebar-menu > li{
+    border-bottom: groove 2px #333e43;
+}
+
+
+
+@media print {
+    .nav-tabs{
+    display: none !important;
+    }
+}

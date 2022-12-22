@@ -1,0 +1,92 @@
+<!-- Table row -->
+<div class="row">
+  <div class="col-xs-12 table-responsive">
+    <table class="table table-striped">
+      <thead class="thead-light">
+        <tr>
+          <th>Product</th>
+
+          <th>In</th>
+          <th>Out</th>
+          <th>Sales</th>
+          <th>Wholesale <br/> Price Cost/ea</th>
+          <th class="text-right">Subtotal</th>
+          <th class="text-right">Suggested/<br/> Retail/ea
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="order">
+        <tr *ngFor="let item of order?.OrderItems | activeItems">
+          <td>
+            <span *ngIf="!isEditMode && !isNewMode">{{item.ProductName}}</span>
+
+            <div *ngIf="isEditMode || isNewMode">
+              <select [(ngModel)]="item.ProductId" (ngModelChange)="onProductSelect($event, item)">
+                    <option>Select Product</option>
+                    <option *ngFor="let product of allProducts;" [value]="product.Id">{{product.Name}}</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <span *ngIf="!isEditMode && !isNewMode">{{item.ItemsOrdered}}</span>
+
+            <div *ngIf="isEditMode || isNewMode">
+              <input type="text" [(ngModel)]="item.ItemsOrdered" (keyup)="itemChanged($event)" style="width: 60px;" />
+            </div>
+          </td>
+          <td>
+            <span *ngIf="!isEditMode && !isNewMode">{{item.ItemsReturned}}</span>
+            <div *ngIf="isEditMode || isNewMode">
+              <input type="text" [(ngModel)]="item.ItemsReturned" (keyup)="recalculateOrder.next(true)" style="width: 60px;" />
+            </div>
+          </td>
+          <td>
+            <span *ngIf="!isEditMode && !isNewMode">{{item.ItemsSold}}</span>
+            <div *ngIf="isEditMode || isNewMode">
+              <input type="text" [(ngModel)]="item.ItemsSold" (keyup)="recalculateOrder.next(true)" style="width: 60px;" />
+            </div>
+          </td>
+          <td>{{item.DiscountPrice | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+          <td class="text-right">{{item.SubTotal | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+          <td class="text-right">{{item.ItemPrice | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+          <td style="width:70px;" class="no-print">
+            <button *ngIf="isEditMode || isNewMode" class="btn btn-sm btn-default" (click)="delete(item)"><i class="fa fa-trash"></i> Delete </button>
+          </td>
+        </tr>
+        <tr *ngIf="(order?.OrderItems | activeItems)?.length<=0">
+          <td colspan="8">
+            <span>No item added. &nbsp;&nbsp;&nbsp;</span>
+          </td>
+        </tr>
+        <tr class="no-print" *ngIf="isEditMode || isNewMode">
+          <td colspan="8">
+            <button (click)="addItem()" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add Item</button>
+          </td>
+        </tr>
+
+        <!-- Order total    -->
+        <tr>
+          <th style="border-bottom:solid 3px #666;" colspan="8" class="text-right">&nbsp;</th>
+        </tr>
+        <tr>
+          <th colspan="5" class="text-right">Net:</th>
+          <td class="text-right">{{order.SubTotal | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <th colspan="5" class="text-right">HST (134896638) </th>
+          <td class="text-right">{{order.TaxAmount | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <th colspan="5" class="text-right">Total:</th>
+          <td class="text-right">{{order.Total | currency :'CAD':'symbol-narrow':'1.2-2'}}</td>
+          <td colspan="2"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- /.col -->
+</div>
+<!-- /.row -->

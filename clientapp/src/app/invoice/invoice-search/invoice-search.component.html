@@ -1,0 +1,48 @@
+<div class="content-wrapper" style="height:10000px">
+  <section class="content-header">
+    <div class="col-xs-9">
+      <h2>
+        Manage Orders and Invoices
+      </h2>
+    </div>
+    <div class="col-xs-3">
+      <button type="button" (click)="donwloadDotmatrixOrders()" class="btn btn-primary pull-right" style="margin-right: 5px;">
+        <i class="fa fa-download"></i> Dot Matrix Layout
+      </button>
+    </div>
+  </section>
+  <section class="content">
+    <div class="row  datatable-search-bar">
+      <div class="col-md-12">
+        <table width="100%">
+          <tr>
+            <td style="padding-right:5px;">
+              <select class="form-control" [compareWith]="compareWithYearId" name="selectedYear" [(ngModel)]="selectedYear" (change)="yearChanged()">
+                <option>All</option>
+                <option *ngFor="let year of yearList" [ngValue]="year">
+                  {{year.FirstSundayOfTheYear | date:'yyyy-MMM'}}
+                </option>
+              </select>
+            </td>
+            <td><input class="form-control" type="text" name="selectedWeek" [(ngModel)]="selectedWeek" placeholder="Enter Week Number"></td>
+            <td><input type="text" class="form-control" placeholder="Route" [(ngModel)]="route"></td>
+            <td><input type="text" class="form-control" placeholder="Customer Name" [(ngModel)]="customerName"></td>
+            <td>
+              <button type="button" class="btn btn-default" (click)="searchChange()" style="margin-left:5px"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+              <!-- <button type="button" class="btn btn-default" (click)="resetSearch()"><i class="fa" aria-hidden="true" ></i> Reset</button> -->
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <input type="checkbox" [(ngModel)]="orderType_ORDER" (change)="addOrderType($event)" /> Show Orders
+      <input type="checkbox" [(ngModel)]="orderType_INVOICE" (change)="addOrderType($event)" /> Show Invoinces
+    </div>
+
+
+    <!-- Records List -->
+    <invoice-list [search-param]="searchParam"></invoice-list>
+
+  </section>
+</div>

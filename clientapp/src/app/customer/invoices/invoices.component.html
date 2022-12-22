@@ -1,0 +1,16 @@
+<div class="tabs-content-wrapper">
+  <div class="row  datatable-search-bar">
+    <div class="col-md-8">
+      <input type="checkbox" [(ngModel)]="orderType_ORDER" (change)="addOrderType($event)" /> Show Orders
+      <input type="checkbox" [(ngModel)]="orderType_INVOICE" (change)="addOrderType($event)" /> Show Invoinces
+    </div>
+    <div class="col-md-4 text-right">
+      <a [routerLink]="['./new']" class="btn btn-sm pull-right btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Create New Order</a>
+    </div>
+  </div>
+  <!-- Records List -->
+  <div>
+    <invoice-list *ngIf="(searchParam$ | async)" [search-param]="searchParam"></invoice-list>
+  </div>
+
+</div>

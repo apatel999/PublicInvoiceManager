@@ -1,0 +1,16 @@
+.info-container .form-group{
+    padding:8px; 
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 150px auto;
+  }
+ 
+  .info-container .form-group label::after{
+      content:':';
+  } 
+
+  .info-container .form-group:nth-child(odd) {
+      background: #f9f9f9;
+    }
+  
+  

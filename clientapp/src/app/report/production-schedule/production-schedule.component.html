@@ -1,0 +1,53 @@
+<div class="content-wrapper" style="height:1000px">
+  <section class="content-header">
+    <div class="col-xs-12">
+      <h2>
+        Production Schedule
+        <span style="font-size: 80%" *ngIf="(productionSchedule$ | async) as productionSchedule">
+          (<span>Week: {{productionSchedule.Week}}</span>
+        <span style="margin-left:20px">Date: {{productionSchedule.ReportDate | date:'yyyy-MMM-dd EEEE'}}</span> )
+        </span>
+      </h2>
+    </div>
+  </section>
+  <section class="content">
+    <div>
+      <form #scheduleForm="ngForm">
+        <table>
+          <tr>
+            <td style="padding-right:5px;">
+              <select class="form-control" [compareWith]="compareWithYearId" name="scheduleYear" [(ngModel)]="scheduleYear" (change)="yearChanged()">
+                <option *ngFor="let year of (yearList$ | async)" [ngValue]="year">
+                      {{year.FirstSundayOfTheYear | date:'yyyy-MMM-dd EEEE'}}
+                </option>
+            </select>
+            </td>
+            <td><input class="form-control" type="text" name="scheduleWeek" [(ngModel)]="scheduleWeek"></td>
+            <td><button type="button" class="btn btn-primary" (click)="loadSchedules()" style="margin-left:5px"> 
+              Load Schedules
+            </button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div *ngIf="(productionSchedule$ | async) as productionSchedule">
+
+      <table class="table table-bordered table-responsive table-hover table-white">
+        <thead>
+          <tr>
+            <th>Products</th>
+            <th *ngFor="let route of productionSchedule.Routes" scope="col">{{route.RouteNumber}}</th>
+            <th class="col-secondary">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of productionSchedule.Products" scope="row">
+            <td>{{item.Product.Name}}</td>
+            <td *ngFor="let route of productionSchedule.Routes">{{item.OrderEntities[route.Id]?.Total}}</td>
+            <td class="col-secondary">{{item.OrdersTotal}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

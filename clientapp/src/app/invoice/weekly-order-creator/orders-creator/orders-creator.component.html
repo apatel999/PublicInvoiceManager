@@ -1,0 +1,41 @@
+<div class="content-wrapper" style="height:1000px">
+  <section class="content-header">
+    <div class="col-xs-12">
+      <h2>
+        Create Weekly Orders
+      </h2>
+    </div>
+  </section>
+
+  <section class="content" *ngIf="!isScheduleSaved">
+    <weekly-schedule (saved)="onWeeklyScheduleSaved($event)"></weekly-schedule>
+  </section>
+
+  <ng-container *ngIf="isScheduleSaved">
+    <section class="content" *ngIf="showCreateOrderButton">
+      <div style="padding-top:100px">
+        <div class="col-xs-12 text-left">
+          <p>Delivery dates saved successfully. Click button to create weekly orders.</p>
+          <button type="button" class="btn btn-success" (click)="createOrders()">Create Orders</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" *ngIf="(creatingOrders$ | async)">
+      <div style="padding-top:100px">
+        <div class="col-xs-12 text-left">
+          <p>Weekly Order creation in progress...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" *ngIf="(createOrderSuccess$ | async) || (createOrderFail$ | async)">
+      <div style="padding-top:100px">
+        <div class="col-xs-12 text-left">
+          <p>Order creation process complete.</p>
+        </div>
+      </div>
+    </section>
+  </ng-container>
+
+</div>

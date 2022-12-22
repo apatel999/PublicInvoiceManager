@@ -1,0 +1,51 @@
+<div *ngIf="billingId > 0" class="box box-primary">
+  <div class="box-header with-border">
+    <h3 class="box-title">
+      Delivery Address
+    </h3>
+    <button class="btn btn-sm pull-right btn-primary" type="button" (click)="add()">
+        <i class="fa fa-plus" aria-hidden="true"></i> &nbsp;New Store
+    </button>
+  </div>
+
+  <div class="box-body">
+    <!--Customer list -->
+    <div *ngIf="!storeEditMode">
+      <table *ngIf="records?.length>0" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Route Order No</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tr *ngFor="let store of records">
+          <td>{{store.Route?.RouteNumber}}</td>
+          <td>{{store.RouteOrderNo}}</td>
+          <td><span>{{store.Address1}}</span><span *ngIf="store.Address2">, {{store.Address2}}</span></td>
+          <td>{{store.City}}</td>
+          <td>{{store.State}}</td>
+          <td>{{store.Status}}</td>
+          <td>
+            <!-- <a style="margin-right:15px;" href="javascript:void(0);" (click)="edit(store.Id)">
+              <i class="glyphicon glyphicon-edit"></i> Edit
+            </a> -->
+            <a [routerLink]="['/stores/',store.Id]"><i class="glyphicon glyphicon-eye-open"></i> View</a>
+          </td>
+        </tr>
+      </table>
+      <div *ngIf="records?.length<=0">No store added. &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" (click)="add()"><i class="fa fa-plus" aria-hidden="true"></i>Add New Store</a></div>
+    </div>
+
+    <!-- Create customer form-->
+
+    <ng-container *ngIf="storeEditMode">
+      <store-form [model]="storeModel" [enableCancel]="true" (onAdded)="addEdit($event)" (onSaved)="addEdit($event)" (cancelClicked)="cancelAddEdit()"></store-form>
+    </ng-container>
+
+  </div>
+</div>

@@ -1,0 +1,85 @@
+<!-- Records List -->
+<ngx-datatable class="material" [rows]="rows" [columns]="cols" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+  [rowHeight]="'auto'" (page)='pageChange($event)' [externalPaging]="true" [count]="totalRows" [offset]="pageOffSet" [limit]="100">
+
+  <ngx-datatable-column name="InvoiceNumber">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Invoice
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      <a [routerLink]="['/invoices/',row.Id]">{{row.InvoiceNumber}}</a>
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="OrderStatus">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Status
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      {{row.OrderStatus}}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="RouteNumber">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Route
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      {{row.StoreInfo.Route.RouteNumber}}
+      <span *ngIf="row.StoreInfo.RouteOrderNo">.{{row.StoreInfo.RouteOrderNo}}</span>
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="BillingGroup">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Customer
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      {{row.StoreInfo.BillingInformation.Name}}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="Address">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Address
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      {{row.StoreInfo.Address1}} {{row.StoreInfo.Address2}}, {{row.StoreInfo.City}}, {{row.StoreInfo.State}}, {{row.StoreInfo.PostalCode}}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="InvoiceDate">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Date
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      {{row.InvoiceDate | date:'dd/MM/yyyy'}}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="InvoiceDate">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Week
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      {{row.Week}}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="Total">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      Total
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      {{row.Total | currency:'CAD':'symbol-narrow':'1.2-2'}}
+    </ng-template>
+  </ngx-datatable-column>
+
+  <ngx-datatable-column name="Actions">
+    <ng-template let-column="column" ngx-datatable-header-template>
+    </ng-template>
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      <a [routerLink]="['/invoices/',row.Id]"><i class="glyphicon glyphicon-edit"></i>  Edit</a>
+    </ng-template>
+  </ngx-datatable-column>
+</ngx-datatable>

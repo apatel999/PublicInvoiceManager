@@ -1,0 +1,110 @@
+<div class="content-wrapper" style="height: 3500px;">
+
+  <section class="content-header">
+    <div class="col-xs-12">
+      <h1>
+        All Customers
+      </h1>
+    </div>
+  </section>
+
+  <section class="content">
+    <!-- Customer List -->
+    <div class="row  datatable-search-bar">
+      <div class=" col-md-8">
+        <search (searchButtonClick)="onSearchChange($event)" (reset)="onSearchReset()"></search>
+        <!-- <div class="input-group">
+          <input type="text" class="form-control" (keyup)="searchChange($event.target.value)" #searchText>
+          <span class="input-group-btn">
+                  <button type="button" class="btn btn-default" (click)="searchChange(searchText.value)" style="margin-left:5px"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                  <button type="button" class="btn btn-default" (click)="searchText.value ='' ; searchChange('')"><i class="fa" aria-hidden="true" ></i> Reset</button>
+              </span>
+        </div> -->
+      </div>
+      <div class="col-md-4 text-right">
+        <a [routerLink]="['./',0]" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;New Customer</a>
+      </div>
+    </div>
+
+    <ngx-datatable #customersTable class="material" [rows]="rows" [columns]="cols" [columnMode]="'force'" [headerHeight]="50"
+      [footerHeight]="50" [rowHeight]="'auto'" (page)='pageChange($event)' [externalPaging]="true" [count]="totalRows" [offset]="pageOffSet"
+      [limit]="10">
+
+      <!-- Row Detail Template -->
+      <ngx-datatable-row-detail #myDetailRow [rowHeight]="auto">
+        <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
+          <table *ngIf="row?.Stores?.length >0" class="table">
+            <tr *ngFor="let store of row.Stores">
+              <td width="160px">{{store?.Route?.RouteNumber}}&#46;{{store?.RouteOrderNo}}</td>
+              <td width="400px"><a [routerLink]="['/stores/',store.Id]"><span>{{store.Address1}}</span><span *ngIf="store.Address2">, {{store.Address2}}</span></a></td>
+              <td>{{store.City}}</td>
+              <td>{{store.State}}</td>
+              <td>{{store.PostalCode}}</td>
+              <td>{{store.Phone}}</td>
+              <td>{{store.ContactPerson}}</td>
+              <td>{{store.Status}}</td>
+              <td><a [routerLink]="['/stores/',store.Id]"><i class="glyphicon glyphicon-eye-open"></i>  View</a></td>
+            </tr>
+          </table>
+          <div class="text-center alert-warning" *ngIf="!row.Stores || row?.Stores?.length <=0">No Store Added.</div>
+        </ng-template>
+      </ngx-datatable-row-detail>
+
+      <!-- Column Templates -->
+      <ngx-datatable-column name="ExpandAll" [width]="50" [resizeable]="false" [sortable]="false" [draggable]="false" [canAutoResize]="false">
+        <ng-template ngx-datatable-header-template>
+          <input type="checkbox" #chkExpandAll (change)="chkExpandAll.checked? customersTable.rowDetail.expandAllRows():customersTable.rowDetail.collapseAllRows(); "
+          />
+        </ng-template>
+        <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+          <a href="javascript:void(0)" [class.datatable-icon-right]="!expanded" [class.datatable-icon-down]="expanded" title="" (click)="toggleExpandRow(row)">
+            </a>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <a [routerLink]="['./',row.Id]">
+          <strong>{{row.Name}}</strong>
+          </a>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <div><span>{{row.Address1}}</span><span *ngIf="row.Address2">, {{row.Address2}}</span>
+            <span>{{row.City}}</span>
+            <span>{{row.State}}</span>
+            <span>{{row.PostalCode}}</span>
+          </div>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          {{row.Status}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column>
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <a [routerLink]="['./',row.Id]"><i class="glyphicon glyphicon-edit"></i>  Edit</a>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <!-- End Column Templates -->
+    </ngx-datatable>
+
+    <!-- <ng-template #deliveryDayTemplate let-row="row" let-value="value">
+      {{value>0 ? weekDays[value-1]: '-'}}
+  </ng-template>
+  <ng-template #actionsTemplate let-row="row">
+      <a class="btn btn-link btn-xs" href="javascript:;" tooltip="Edit" (click)="edit(row)">
+              <i class="fa fa-edit"></i>
+          </a>
+  </ng-template> -->
+    <!-- Customer List End -->
+
+  </section>
+  <!--for generating invoice-->
+</div>

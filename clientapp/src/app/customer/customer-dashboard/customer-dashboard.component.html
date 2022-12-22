@@ -1,0 +1,19 @@
+<div class="content-wrapper" style="min-height:1500px">
+  <section class="content-header">
+    <h2>
+      Customer
+    </h2>
+  </section>
+  <section class="content">
+    <ul class="nav nav-tabs">
+      <li role="presentation" [ngClass]="{'active':selectedTab=='' || this.selectedTab=='customer-detail'}"><a [routerLink]="['customer-detail']" routerLinkActive="active">Overview</a></li>
+      <li role="presentation" *ngIf="hasCustomerId$ | async" [ngClass]="{'active':selectedTab=='invoices'}">
+        <a (click)="selectedTab='invoices'" [routerLink]="['invoices']" routerLinkActive="active">Invoices</a>
+      </li>
+      <li role="presentation" *ngIf="hasCustomerId$ | async" [ngClass]="{'active':selectedTab=='weekly-billing-statement'}">
+        <a (click)="selectedTab='weekly-billing-statement'" [routerLink]="['weekly-billing-statement']" routerLinkActive="active">Weekly Billing Statement</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+  </section>
+</div>

@@ -1,0 +1,195 @@
+<div class="tabs-content-wrapper">
+
+    <div class="col-md-6 col-nopadding">
+        <!-- Billing Information -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    Billing Information
+                </h3>
+            </div>
+
+            <div class="box-body">
+                <form name="form2" #form="ngForm" (ngSubmit)="form.valid? saveBillingInformation(): ''">
+                    <div class="form-group" [ngClass]="{'has-error':form.submitted && !Name.valid}">
+                        <label for="route-{{uniqueId}}">Name <span class="required">(Required)</span></label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="Name" class="form-control" [(ngModel)]="model.Name" required #Name="ngModel"
+                            />
+                            <span *ngIf="form.submitted && !Name.valid && Name.errors.required" class="help-block">Required field</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Billing Group Id: (It will show on Invoice)</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="BillingGroupId" class="form-control" [(ngModel)]="model.BillingGroupId"
+                                #Name="ngModel" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" [ngClass]="{'has-error':form.submitted && !model.Status}">
+                        <label for="route-{{uniqueId}}">Status</label>
+                        <div>
+                            <select class="form-control" attr.id="route-{{uniqueId}}" required [(ngModel)]="model.Status" name="Status" #Status>
+                              <option *ngFor="let status of keys(appVars.RecordStatus); let i =index" [value]="status">{{appVars.RecordStatus[status]}}</option>
+                          </select>
+                            <span *ngIf="form.submitted && !model.Status " class="help-block">Required field</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Discount (in %) <span class="required">(Required)</span></label>
+                        <div>
+                            <input type="number" style="width:120px; display:inline;" attr.id="route-{{uniqueId}}" name="PercentDiscount" class="form-control"
+                                [(ngModel)]="model.PercentDiscount" required #PercentDiscount="ngModel" />%
+                            <!-- <select class="form-control" attr.id="route-{{uniqueId}}" required [(ngModel)]="model.PercentDiscount" name="PercentDiscount"
+                                #PricingtTypeId>
+                                <option [value]="0" [selected]="model.PercentDiscount == 0" >N/A</option>
+                                <option *ngFor="let type of appVars.PricingTypes; let i =index" [value]="type.Value"  [selected]="model.PercentDiscount == type.Value" >{{type.Description}}</option>
+                            </select> -->
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="route-{{uniqueId}}">Customer Type</label>
+                        <div>
+                            <input type="radio" attr.id="route-{{uniqueId}}" (change)="customerTypeChanged('CHARG')" name="customerType" [value]="CHARG">CHARGE
+                            <input type="radio" attr.id="route-{{uniqueId}}" (change)="customerTypeChanged('CASH')" name="customerType" [value]="CASH">CASH
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Customer Type <span class="required">(Required)</span></label>
+                        <div>
+                            <input type="radio" attr.id="route-{{uniqueId}}" [(ngModel)]="model.PaymentType" name="PaymentType" value="CHARG">CHARGE
+                            <input type="radio" attr.id="route-{{uniqueId}}" [(ngModel)]="model.PaymentType" name="PaymentType" value="CASH">CASH
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="route-{{uniqueId}}">PST Exempt</label>
+                        <div>
+                            <div>
+                                <input type="radio" attr.id="route-{{uniqueId}}" (change)="pstExemptChanged(1)" name="pstExempt" [value]="1">Yes
+                                <input type="radio" attr.id="route-{{uniqueId}}" (change)="pstExemptChanged(0)" name="pstExempt" [value]="0">No
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="form-group">
+                        <label for="route-{{uniqueId}}">HST Number</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="HstNumber" class="form-control" [(ngModel)]="model.HstNumber" #HstNumber="ngModel"
+                            />
+                        </div>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Note</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="Note" class="form-control" [(ngModel)]="model.Note" #Note="ngModel"
+                            />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Address 1 <span class="required">(Required)</span></label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="Address1" class="form-control" [(ngModel)]="model.Address1" #Address1="ngModel"
+                            />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Address 2</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="Address2" class="form-control" [(ngModel)]="model.Address2" #Address2="ngModel"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">City</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="City" class="form-control" [(ngModel)]="model.City" #City="ngModel"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">State/Province</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="State" class="form-control" [(ngModel)]="model.State" #State="ngModel"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Postal Code</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="PostalCode" class="form-control" [(ngModel)]="model.PostalCode" #PostalCode="ngModel"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Phone</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="Phone" class="form-control" [(ngModel)]="model.Phone" #Phone="ngModel"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Fax</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="Fax" class="form-control" [(ngModel)]="model.Fax" #Fax="ngModel" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="route-{{uniqueId}}">Contact Person</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="ContactPerson" class="form-control" [(ngModel)]="model.ContactPerson"
+                                #ContactPerson="ngModel" />
+                        </div>
+                    </div>
+
+                    <div class="box-footer">
+                        <button type="button" class="btn btn-warning" (click)="cancel()">Cancel</button>
+                        <button *ngIf="!saveDisabled" type="submit" class="btn btn-success">Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales, Stores -->
+    <div class="col-md-6">
+        <!-- Sales -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    Sales
+                </h3>
+            </div>
+            <div class="box-body">
+                <table width="100%">
+                    <tr>
+                        <th>YTD</th>
+                        <th>LTD</th>
+                    </tr>
+                    <tr>
+                        <td>${{model?.Ytd}}</td>
+                        <td>${{model?.Ltd}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Stores -->
+        <store [records]="model?.Stores" [billingId]="model.Id" [billingInformation] = "model"></store>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+@model DAL.Models.Order
+ ____________________________________________
+|	                   |       WHOLESALE     |	
+| IN  |  OUT  | SALES  |  COST/ea     AMOUNT | RETAIL/ea
+@foreach (var item in @Model.OrderItems)
+{
+	var text = "|" + item.ItemsOrdered;
+	@text
+}

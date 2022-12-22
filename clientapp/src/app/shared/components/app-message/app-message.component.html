@@ -1,0 +1,7 @@
+<div *ngIf="alerts && alerts?.length>0" class="message-section">
+  <div class="app-messages">
+    <div *ngFor="let alert of alerts; let i=index">
+      <ngb-alert [type]="alert.type" *ngIf="alert.display" dismissible="true" (close)="alertClosed(i)">{{alert.msg}}</ngb-alert>
+    </div>
+  </div>
+</div>

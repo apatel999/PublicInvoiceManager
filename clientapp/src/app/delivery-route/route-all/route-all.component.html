@@ -1,0 +1,128 @@
+<div class="content-wrapper" style="height:1000px">
+    <section class="content-header">
+        <h1>Mangae Routes</h1>
+    </section>
+
+    <section class="content">
+        <!-- Delivery Route form -->
+        <div class="box box-primary" *ngIf="createMode || editMode">
+            <div class="box-header with-border">
+                <h3 class="box-title" *ngIf="!editMode && createMode">
+                    Create New Route
+                </h3>
+                <h3 class="box-title" *ngIf="editMode && !createMode">
+                    Update Route
+                </h3>
+            </div>
+
+            <form name="routeForm" #form="ngForm" (ngSubmit)="form.valid ? save():''">
+                <input type="hidden" name="Id" [(ngModel)]="model.Id" #Id="ngModel" />
+                <div class="box-body">
+                    <div class="form-group" [ngClass]="{'has-error':form.submitted && !RouteNumber.valid}">
+                        <label for="route-{{uniqueId}}">Route</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="RouteNumber" class="form-control" [(ngModel)]="model.RouteNumber" required
+                                [routenoValidation]="rows" #RouteNumber="ngModel" />
+                            <span *ngIf="form.submitted && !RouteNumber.valid && RouteNumber.errors.required" class="help-block">Required field</span>
+                            <span *ngIf="form.submitted && !RouteNumber.valid && RouteNumber.errors.routenoValidation" class="help-block">Route number already exist.Please use another route no.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" [ngClass]="{'has-error':form.submitted && !Description.valid}">
+                        <label for="route-{{uniqueId}}">Description</label>
+                        <div>
+                            <input type="text" attr.id="route-{{uniqueId}}" name="Description" class="form-control" [(ngModel)]="model.Description" required
+                                #Description="ngModel" />
+                            <span *ngIf="form.submitted && !Description.valid" class="help-block">Required field</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group" [ngClass]="{'has-error':form.submitted && (!model.DeliveryDate)}">
+                        <label for="route-{{uniqueId}}">Delivery Date</label>
+
+                        <div class="input-group">
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input class="form-control" placeholder="yyyy-mm-dd" name="DeliveryDate" [(ngModel)]="model.DeliveryDateObject" ngbDatepicker
+                                            #d="ngbDatepicker">
+                                    </td>
+                                    <td>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;">
+                                                <i class="fa fa-calendar"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <span *ngIf="form.submitted && (!model.DeliveryDate) " class="help-block">Required field</span>
+                    </div> -->
+
+                    <div class="form-group" [ngClass]="{'has-error':form.submitted && (!model.DeliveryDay || model.DeliveryDay <=0)}">
+                        <label for="route-{{uniqueId}}">Delivery Day</label>
+                        <div>
+                            <select class="form-control" attr.id="route-{{uniqueId}}" required [(ngModel)]="model.DeliveryDay" name="DeliveryDay" #DeliveryDay>
+                                    <option disabled hidden [value]="undefined">-- Select day --</option>
+                                    <option *ngFor="let day of weekDays; let i =index" [value]="i">{{day}}</option>
+                                </select>
+                            <span *ngIf="form.submitted && (!model.DeliveryDay || model.DeliveryDay <0) " class="help-block">Required field</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" [ngClass]="{'has-error':form.submitted && (!model.ProductionDay || model.ProductionDay <=0)}">
+                        <label for="route-{{uniqueId}}">Production Day</label>
+                        <div>
+                            <select class="form-control" attr.id="route-{{uniqueId}}" required [(ngModel)]="model.ProductionDay" name="ProductionDay"
+                                #ProductionDay>
+                                <option disabled hidden [value]="undefined">-- Select day --</option>
+                                <option *ngFor="let day of weekDays; let i =index" [value]="i+1">{{day}}</option>
+                            </select>
+                            <span *ngIf="form.submitted && (!model.ProductionDay || model.ProductionDay <=0) " class="help-block">Required field</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <button type="button" class="btn btn-warning" (click)="cancel()">Cancel</button>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </div>
+            </form>
+        </div>
+        <!-- Delivery Route Form  End-->
+
+        <!-- Route List -->
+        <div class="row  datatable-search-bar">
+            <div class=" col-md-8">
+                <div class="input-group">
+                    <input type="text" class="form-control" (keyup)="searchChange($event.target.value)" #searchText>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" (click)="searchChange(searchText.value)" style="margin-left:5px"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                        <button type="button" class="btn btn-default" (click)="searchText.value ='' ; resetSearch()"><i class="fa" aria-hidden="true" ></i> Reset</button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 text-right">
+                <button class="btn btn-primary" type="button" (click)="addRoute()">
+                    <i class="fa fa-plus" aria-hidden="true"></i> &nbsp;New Route
+                </button>
+            </div>
+        </div>
+        <ngx-datatable class="material" [rows]="rows" [columns]="cols" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+            [rowHeight]="'auto'">
+        </ngx-datatable>
+        <ng-template #deliveryDayTemplate let-row="row" let-value="value">
+            {{value>=0 ? weekDays[value]: '-'}}
+        </ng-template>
+        <ng-template #productionDayTemplate let-row="row" let-value="value">
+            {{value>0 ? weekDays[value-1]: '-'}}
+        </ng-template>
+        <ng-template #actionsTemplate let-row="row">
+            <a class="btn btn-link btn-xs" href="javascript:;" tooltip="Edit" (click)="edit(row)">
+                    <i class="fa fa-edit"></i>
+                </a>
+        </ng-template>
+        <!-- Route List End -->
+    </section>
+</div>

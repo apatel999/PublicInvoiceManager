@@ -1,0 +1,136 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper section-to-print">
+  <!-- Main content -->
+  <section class="invoice" *ngIf="(orderLoaded$ | async)">
+    <div *ngIf="(orderDetail$ | async) as orderDetail">
+      <div class="row">
+        <div *ngIf="(navigationIds$ | async) as navigationIds">
+          <a *ngIf="navigationIds?.next > 0" [routerLink]="['/invoices/', navigationIds.next ]" class="btn btn-sm pull-right no-print">Next <i class="glyphicon glyphicon-menu-right"></i></a>
+          <a *ngIf="navigationIds?.previous > 0" [routerLink]="['/invoices/',navigationIds.previous ]" class="btn btn-sm pull-right no-print"><i class="glyphicon glyphicon-menu-left"></i> Previous</a>
+        </div>
+      </div>
+      <!-- title row -->
+      <div class="row page-header">
+        <div class="row ">
+          <div class="col-xs-10">
+            <h2 class="">Camlin Flowers
+              <address>
+                P.O. BOX 3, Station Main, Peterborough, ON, K9J 6Y5, Phone: (800) 642 9913, sales@camlinflowers.ca
+              </address>
+            </h2>
+          </div>
+          <div class="col-xs-2">
+            <button *ngIf="orderDetail.OrderStatus == 'INVOICE' && !isEditMode" type="button" class="btn btn-sm btn-success pull-right no-print"
+              (click)="isEditMode=true;" style="margin: 0 0 5px 5px;">
+              Edit
+           </button>
+
+            <button *ngIf="orderDetail.OrderStatus == 'INVOICE' && isEditMode" type="button" class="btn btn-sm btn-warning pull-right no-print"
+              (click)="isEditMode=false;" style="margin: 0 0 5px 5px;">
+               Cancel Edit
+             </button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </div>
+      <!-- info row -->
+      <div class="row invoice-info">
+        <div class="col-sm-4 invoice-col">
+
+          <strong>Sold To: </strong>
+          <div>
+            <b *ngIf="orderDetail.InvoiceNumber>0">Invoice #: {{orderDetail.InvoiceNumber}}</b>
+          </div>
+          <div>
+            <b>Date:</b> {{orderDetail?.CreateDate | date:'dd/MM/yyyy'}}
+          </div>
+          <div>
+            <strong>{{orderDetail?.StoreInfo?.BillingInformation?.Name}}</strong>
+            <address>
+              {{orderDetail?.StoreInfo?.BillingInformation?.Address1}} {{orderDetail?.StoreInfo?.BillingInformation?.Address2}}
+              <br/> {{orderDetail?.StoreInfo?.BillingInformation?.City}}
+              <br/> {{orderDetail?.StoreInfo?.BillingInformation?.State}}, {{orderDetail?.StoreInfo?.BillingInformation?.PostalCode}}
+              <br/> <span *ngIf="orderDetail?.StoreInfo?.BillingInformation?.Phone">Phone: {{orderDetail?.StoreInfo?.BillingInformation?.Phone}}</span>
+              <br/> <span *ngIf="orderDetail?.StoreInfo?.BillingInformation?.Email">Email: {{orderDetail?.StoreInfo?.BillingInformation?.Email}}
+                  </span>
+            </address>
+          </div>
+
+        </div>
+        <!-- /.col -->
+        <div class="col-sm-4 invoice-col"></div>
+        <div class="col-sm-4 invoice-col">
+          <div class="no-print">
+            <b>Status:</b> <select [(ngModel)]="orderStatus" [style.color]="orderStatus=='INVOICE'?'green':'brown'">
+                  <option [value]="'ORDER'" style="color:brown">ORDER</option>
+                  <option [value]="'INVOICE'" style="color:green">INVOICE</option>
+              </select>
+          </div>
+
+          <div>
+            <!-- <strong>Delivery To: </strong> -->
+            <div *ngIf="orderDetail?.StoreInfo?.StoreNumber">
+              <strong>Store No: {{orderDetail?.StoreInfo?.StoreNumber}}</strong>
+            </div>
+            <!--<address>
+              {{orderDetail?.StoreInfo?.Address1}} {{orderDetail?.StoreInfo?.Address2}}
+              <br/> {{orderDetail?.StoreInfo?.City}}
+              <br/> {{orderDetail?.StoreInfo?.State}}, {{orderDetail?.StoreInfo?.PostalCode}}
+              <br/> <span *ngIf="orderDetail?.StoreInfo?.Phone">Phone: {{orderDetail?.StoreInfo?.Phone}}</span>
+              <br/> <span *ngIf="orderDetail?.StoreInfo?.Email">Email: {{orderDetail?.StoreInfo?.Email}}
+              </span>
+            </address> -->
+          </div>
+
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <div>
+        <invoice-items [order]="orderDetail" [isEditMode]="orderDetail.OrderStatus == 'ORDER' || isEditMode"></invoice-items>
+
+        <div>
+          <strong>WATER CONDITION: </strong>
+          <div>CLEAN_________ DIRTY _________</div>
+          <div>CLEAN VASES & WATER INCREASE SALES</div>
+        </div>
+        <br/>
+        <br/>
+        <table width="100%" style="margin-top:10px; margin-bottom:10px">
+          <tr>
+            <td style="border-top:solid 1px #999; text-align: center;">STORE REPRESENTATIVE</td>
+            <td></td>
+            <td style="border-top:solid 1px #999; text-align: center;">SALES REPRESENTATIVE</td>
+          </tr>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>*** THANK YOU ***</td>
+            <td class="text-left" style="text-align: center;">{{orderDetail?.StoreInfo?.Route?.RouteNumber + "." + orderDetail?.StoreInfo?.RouteOrderNo}}</td>
+          </tr>
+        </table>
+
+      </div>
+
+
+      <!-- this row will not appear when printing -->
+      <div class="row no-print">
+        <div class="col-xs-12">
+          <a href="javascript:window.print()" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+          <button type="button" (click)="opendotmatrixLayout()" class="btn btn-default" style="margin-right: 5px;">
+            <i class="fa fa-download"></i> Dot Matrix Layout
+          </button>
+
+          <button type="button" class="btn btn-success pull-right" (click)="saveOrder(orderDetail)">Save</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.content -->
+  <div class="clearfix"></div>
+</div>
+<!-- /.content-wrapper -->

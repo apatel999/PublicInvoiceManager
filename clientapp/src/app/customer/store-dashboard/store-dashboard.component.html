@@ -1,0 +1,20 @@
+<div *ngIf="model" class="content-wrapper" style="min-height:1500px">
+  <section class="content-header">
+    <h2>
+      Store: {{model?.BillingInformation?.Name}}
+    </h2>
+    <div>{{model?.Address1}} {{model?.Address2}}, {{model?.City}}, {{model?.State}}, {{model?.PostalCode}}</div>
+  </section>
+  <section class="content">
+    <ul class="nav nav-tabs">
+      <li role="presentation" [ngClass]="{'active':selectedTab=='' || this.selectedTab=='store-detail'}"><a [routerLink]="['store-detail']" routerLinkActive="active">Overview</a></li>
+      <li role="presentation" [ngClass]="{'active':selectedTab=='weekly-orders'}">
+        <a (click)="selectedTab='weekly-orders'" [routerLink]="['weekly-orders']" routerLinkActive="active">Weekly Orders</a>
+      </li>
+      <li role="presentation" [ngClass]="{'active':selectedTab=='invoices'}">
+        <a (click)="selectedTab='invoices'" [routerLink]="['invoices']" routerLinkActive="active">Invoices</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+  </section>
+</div>

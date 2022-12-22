@@ -1,0 +1,81 @@
+<div class="content-wrapper" style="height:1000px">
+  <section class="content-header">
+    <div class="col-xs-12">
+      <h2>
+        Delivery Sheets
+        <span style="font-size: 80%"  *ngIf="(report$ | async) as reports">
+            (<span>Week: {{reports.Week}}</span>
+            <span style="margin-left:20px">Date: {{reports.ReportDate | date:'yyyy-MMM-dd EEEE'}}</span> )
+        </span>
+      </h2>
+    </div>
+  </section>
+  <section class="content">
+    <div>
+      <form #scheduleForm="ngForm">
+        <table>
+          <tr>
+            <td style="padding-right:5px;">
+              <select class="form-control" [compareWith]="compareWithYearId" name="scheduleYear" [(ngModel)]="scheduleYear" (change)="yearChanged()">
+                <option *ngFor="let year of (yearList$ | async)" [ngValue]="year">
+                      {{year.FirstSundayOfTheYear | date:'yyyy-MMM-dd EEEE'}}
+                </option>
+            </select>
+            </td>
+            <td><input type="text" class="form-control"  name="scheduleWeek" [(ngModel)]="scheduleWeek"></td>
+            <td><input type="text" class="form-control" placeholder="Route" name="route" [(ngModel)]="route"></td>
+            <td><button type="button" class="btn btn-primary" (click)="loadReport()" style="margin-left:5px">
+              Load
+            </button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div *ngIf="(report$ | async) as reports">
+        <table width="100%" class="table table-bordered table-responsive table-hover table-white report-table">
+            <thead>
+              <tr>
+                  <th rowspan="2">Store No</th>
+                  <th rowspan="2">Name</th>
+                  <th rowspan="2">Address</th>
+                  <th rowspan="2">City</th>
+                  <th colspan="2" *ngFor="let product of products">{{product.Name}}</th>
+              </tr>
+              <tr>
+                  <!--<th rowspan="2">Store No</th>
+                  <th rowspan="2">Name</th>
+                  <th rowspan="2">Address</th>
+                  <th rowspan="2">City</th>-->
+                  <ng-container  *ngFor="let product of products">
+                  <th>Ins</th>
+                  <th>Outs</th>
+                  </ng-container>
+              </tr>
+            </thead>
+            <tr *ngFor="let insOuts of reports.InsOuts">
+                <td>{{ insOuts.Store.StoreNumber}}</td>
+                <td>{{ insOuts.Store.BillingInformation.Name}}</td>
+                <td>{{ insOuts.Store.Address1}}</td>
+                <td>{{ insOuts.Store.City}}</td>
+                <ng-container  *ngFor="let product of products">
+                <td>{{getProduct(insOuts.Products, product.Id)?.Ins}}</td>
+                <td>{{getProduct(insOuts.Products, product.Id)?.Outs}}</td>
+                </ng-container>
+            </tr>
+            <tr  style="background-color: blanchedalmond">
+                <td colspan="4" align="right"> <strong>Total</strong></td>
+                <ng-container  *ngFor="let product of products">
+                <td>{{reports.InsOutsTotal[product.Id]?.Ins}}</td>
+                <td>{{reports.InsOutsTotal[product.Id]?.Outs}}</td>
+                </ng-container>
+            </tr>
+        </table>
+
+
+    </div>
+
+  </section>
+
+
+</div>

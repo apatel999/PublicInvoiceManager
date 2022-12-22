@@ -1,0 +1,109 @@
+<form *ngIf="storeModel" #form="ngForm" (ngSubmit)="form.valid? saveStore():''" novalidate>
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Status</label>
+    <div>
+      <select class="form-control" attr.id="route-{{uniqueId}}" required [(ngModel)]="storeModel.Status" name="Status" #Status="ngModel">
+          <option *ngFor="let status of keys(appVars.RecordStatus); let i =index" [value]="status">{{appVars.RecordStatus[status]}}</option>
+      </select>
+      <span *ngIf="form.submitted && !storeModel.Status" class="help-block">Required field</span>
+    </div>
+  </div>
+
+  <div class="form-group" [ngClass]="{'has-error':form.submitted && RouteId.invalid }">
+    <label for="route-{{uniqueId}}">Route Number</label>
+    <div>
+      <select class="form-control" attr.id="route-{{uniqueId}}" required [(ngModel)]="storeModel.RouteId" name="RouteId" #RouteId="ngModel">
+            <option value="">Select Route Number</option>
+            <option *ngFor="let route of (deliveryRouteService.allRoutes|async);" [value]="route.Id">{{route.RouteNumber}}: {{route.Description}} ({{appVars.WeekDayText(route.DeliveryDay)}})</option>
+        </select>
+      <span *ngIf="form.submitted && RouteId.invalid  && RouteId.errors.required" class="help-block">Required field</span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Route Order Number</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="RouteOrderNo" class="form-control" [(ngModel)]="storeModel.RouteOrderNo"
+        #RouteOrderNo="ngModel" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Store Number</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="StoreNumber" class="form-control" [(ngModel)]="storeModel.StoreNumber"
+        #StoreNumber="ngModel" />
+    </div>
+  </div>
+
+  <div class="form-group" [ngClass]="{'has-error':form.submitted && Address1.invalid }">
+    <label for="route-{{uniqueId}}">Address 1</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="Address1" class="form-control" [(ngModel)]="storeModel.Address1" required
+        #Address1="ngModel" />
+      <span *ngIf="form.submitted && Address1.invalid" class="help-block">Required field</span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Address 2</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="Address2" class="form-control" [(ngModel)]="storeModel.Address2" #Address2="ngModel"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">City</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="City" class="form-control" [(ngModel)]="storeModel.City" #City="ngModel"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">State/Province</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="State" class="form-control" [(ngModel)]="storeModel.State" #State="ngModel"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Postal Code</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="PostalCode" class="form-control" [(ngModel)]="storeModel.PostalCode"
+        #PostalCode="ngModel" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Phone</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="Phone" class="form-control" [(ngModel)]="storeModel.Phone" #Phone="ngModel"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Fax</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="Fax" class="form-control" [(ngModel)]="storeModel.Fax" #Fax="ngModel"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="route-{{uniqueId}}">Contact Person</label>
+    <div>
+      <input type="text" attr.id="route-{{uniqueId}}" name="ContactPerson" class="form-control" [(ngModel)]="storeModel.ContactPerson"
+        #ContactPerson="ngModel" />
+    </div>
+  </div>
+
+  <div class="box-footer">
+    <button *ngIf="enableCancel" type="button" class="btn btn-warning" (click)="cancel()">Cancel</button>
+    <button *ngIf="!saveDisabled" type="submit" class="btn btn-success">Save</button>
+  </div>
+
+</form>
